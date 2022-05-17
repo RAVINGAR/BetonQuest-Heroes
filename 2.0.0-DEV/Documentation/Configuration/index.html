@@ -1613,6 +1613,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#quest-downloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quest downloader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#misc-settings" class="md-nav__link">
     <span class="md-ellipsis">
       Misc settings
@@ -2531,6 +2540,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#quest-downloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quest downloader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#misc-settings" class="md-nav__link">
     <span class="md-ellipsis">
       Misc settings
@@ -2725,22 +2743,30 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
 </ul>
 <h3 id="conversation-settings-chestio">Conversation Settings: ChestIO<a class="headerlink" href="#conversation-settings-chestio" title="Permanent link">🔗</a></h3>
 <ul>
-<li><code>conversation_IO_config</code> manages settings for individual conoversation IO's:<ul>
+<li><code>conversation_IO_config</code> manages settings for individual conoversation IO's:</li>
 <li><code>chest</code> manages settings for the chest conversation IO<ul>
 <li><code>show_number</code> will show the player number option if true (default: true)</li>
 <li><code>show_npc_text</code> will show the npc text in every player option if true (default: true)</li>
 </ul>
 </li>
 </ul>
-</li>
+<h3 id="quest-downloader">Quest downloader<a class="headerlink" href="#quest-downloader" title="Permanent link">🔗</a></h3>
+<p><code>download</code> controls security restrictions for the <a href="../Commands-and-permissions/"><code>/q download</code></a> command:</p>
+<ul>
+<li><code>pullrequests</code> defines if pull requests may be downloaded. <strong>Only enable this if you really know what you are doing!</strong>
+  Everyone can open pull requests that could contain malicious files and if a permission misconfiguration occurs this
+  will make your server vulnerable to attacks.</li>
+<li><code>repo_whitelist</code> is a list of trusted github repositories from which quests and templates can be downloaded.<br />
+  By default only or official tutorial repo <a href="https://github.com/BetonQuest/Quest-Tutorials">BetonQuest/Quest-Tutorials</a>
+  is on this list.</li>
 </ul>
 <h3 id="misc-settings">Misc settings<a class="headerlink" href="#misc-settings" title="Permanent link">🔗</a></h3>
 <ul>
-<li><code>date_format</code> is the Java <a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">date format</a> used in journal dates.
-   It needs to have a space between the day and hour.</li>
-<li><code>debug</code> is responsible for logging the plugin's activity to <em>debug.log</em> file in <em>logs</em> directory. Turning this on can slow your server down.
-   However, if you experience any errors, turn this on and let the plugin gather the data and send logs to the developer.
-   Note that the first run of the plugin will be logged anyway, just as a precaution.</li>
+<li><code>date_format</code> is the Java <a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">date format</a>
+  used in journal dates. It needs to have a space between the day and hour.</li>
+<li><code>debug</code> is responsible for logging the plugin's activity to <em>debug.log</em> file in <em>logs</em> directory. Turning this on can
+  slow your server down. However, if you experience any errors, turn this on and let the plugin gather the data and send
+  logs to the developer. Note that the first run of the plugin will be logged anyway, just as a precaution.</li>
 </ul>
 
   
@@ -2753,7 +2779,7 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-04-24T20:08:37+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-04-24</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-04-26T08:31:17+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-04-26</span>
       
     
   </small>
