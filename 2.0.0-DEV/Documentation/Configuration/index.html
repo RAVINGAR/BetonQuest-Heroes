@@ -1673,15 +1673,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#default-package-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default Package name
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#adjusting-the-backpack-to-the-keepinventory-gamerule" class="md-nav__link">
     <span class="md-ellipsis">
       Adjusting the backpack to the KeepInventory gamerule
@@ -1784,6 +1775,15 @@
   <a href="#quest-downloader" class="md-nav__link">
     <span class="md-ellipsis">
       Quest downloader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Items
     </span>
   </a>
   
@@ -2648,15 +2648,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#default-package-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default Package name
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#adjusting-the-backpack-to-the-keepinventory-gamerule" class="md-nav__link">
     <span class="md-ellipsis">
       Adjusting the backpack to the KeepInventory gamerule
@@ -2759,6 +2750,15 @@
   <a href="#quest-downloader" class="md-nav__link">
     <span class="md-ellipsis">
       Quest downloader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Items
     </span>
   </a>
   
@@ -2882,8 +2882,6 @@ Read <a href="../Conversations/">this page</a> for more information about chat i
 <h3 id="conversation-pullback-message">Conversation pullback message<a class="headerlink" href="#conversation-pullback-message" title="Permanent link">🔗</a></h3>
 <p><code>notify_pullback</code> will display a message every time the player is pulled back by the <code>stop</code> option in conversations (in the case of chat-based conversations).
 It notifies players that they are in a conversation, and the pullback is not a bug.</p>
-<h3 id="default-package-name">Default Package name<a class="headerlink" href="#default-package-name" title="Permanent link">🔗</a></h3>
-<p><code>default_package</code> is a name of the package that should be used when a package is not specified in /q command. This is for your convenience.</p>
 <h3 id="adjusting-the-backpack-to-the-keepinventory-gamerule">Adjusting the backpack to the KeepInventory gamerule<a class="headerlink" href="#adjusting-the-backpack-to-the-keepinventory-gamerule" title="Permanent link">🔗</a></h3>
 <p><code>remove_items_after_respawn</code> option should be turned on if "keepInventory" gamerule is not being used. 
 It prevents other plugins from duplicating quest items after death.</p>
@@ -2975,6 +2973,16 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
   By default only or official tutorial repo <a href="https://github.com/BetonQuest/Quest-Tutorials">BetonQuest/Quest-Tutorials</a>
   is on this list.</li>
 </ul>
+<h3 id="items">Items<a class="headerlink" href="#items" title="Permanent link">🔗</a></h3>
+<p><code>items</code> gives the possibility to override default items, that are defined and used by BetonQuest.
+The items need to be defined in a package, and then you need to reference the item here with an absolute path.</p>
+<ul>
+<li><code>backpack</code> items that are used by the backpack.</li>
+<li><code>previous_button</code> the item to go to the previous page of items in the backpack.</li>
+<li><code>next_button</code> the item to go to the next page of items in the backpack.</li>
+<li><code>cancel_button</code> the item to show the quest cancelers.  </li>
+<li><code>compass_button</code> the item to show the quest compass.</li>
+</ul>
 <h3 id="misc-settings">Misc settings<a class="headerlink" href="#misc-settings" title="Permanent link">🔗</a></h3>
 <ul>
 <li><code>date_format</code> is the Java <a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">date format</a>
@@ -3023,7 +3031,7 @@ If you want to add a font style (bold, italic etc.) do so after placing a comma.
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Configuration+-+/Documentation/Configuration/&version=2.0.0-DEV-310"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Configuration+-+/Documentation/Configuration/&version=2.0.0-DEV-311"> feedback form</a>.
               
             </div>
           

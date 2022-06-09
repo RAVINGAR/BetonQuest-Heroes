@@ -2369,20 +2369,19 @@
 <p>Reloading loads all data from configuration, but not everything is updated. Player's data isn't touched to avoid lags made by database saving. The database is also the same, you will have to reload/restart the whole server for the database to change.</p>
 <p>Tags subcommand allows you to easily list and modify tags. '<code>/q tags Beton</code>' would list tags for player Beton. '<code>/q tags Beton add test</code>' would add "test" tag for that player, and '<code>/q tags Beton del test</code>' would remove it.</p>
 <p>Points subcommand is similar - listing points is done the same way. Adding points to a category looks like that: '<code>/q points Beton add reputation 20</code>' (adding 20 points to "reputation" category). You can also subtract points with negative amounts. Removing the whole point category can be achieved by '<code>/q points Beton del reputation</code>'.</p>
-<p>Journal subcommand works in the same way as those two above. Adding and removing looks like <code>/q journal Beton add default.wood_started</code> (or <code>del</code>), and you can also specify the date of entry when adding it, by appending date written like this: <code>23.04.2014_16:52</code> at the end of the command. Note that there is <code>_</code> character instead of space!</p>
+<p>Journal subcommand works in the same way as those two above. Adding and removing looks like <code>/q journal Beton add quest.wood_started</code> (or <code>del</code>), and you can also specify the date of entry when adding it, by appending date written like this: <code>23.04.2014_16:52</code> at the end of the command. Note that there is <code>_</code> character instead of space!</p>
 <p>Objective subcommand allows you to list all active objectives (shown as their labels) of the player. It can also directly add or cancel objectives using instruction strings. You can also complete the objective for the player using <code>complete</code> argument - it will run all events and remove the objective.</p>
-<p>Running events for online players can be done with event argument: '<code>/q event Beton give_emeralds</code>' would run "give_emeralds" for player Beton (if he's online) from default package (not necessarily "default" but rather the default one specified in <em>config.yml</em>). If you want to run a static event, replace player's name with <code>-</code>.</p>
-<p>There is also condition argument for checking conditions, for example '<code>/q condition Beton has_food</code>'. Events and conditions need to be defined in their files, this command doesn't accept raw instructions. You can skip package name, the plugin will assume you're reffering to package specified in <code>default_package</code> option in <em>config.yml</em> file. If you want to check a static condition replace the player's name with <code>-</code>.</p>
+<p>Running events for online players can be done with event argument: '<code>/q event Beton quest.give_emeralds</code>' would run <code>give_emeralds</code> for player Beton (if he's online) from the package <code>quest</code>. If you want to run a static event, replace player's name with <code>-</code>.</p>
+<p>There is also condition argument for checking conditions, for example '<code>/q condition Beton has_food</code>'. Events and conditions need to be defined in their files, this command doesn't accept raw instructions. If you want to check a static condition replace the player's name with <code>-</code>.</p>
 <p>If you need to create for example "Nettlebane" quest item, just hold it in your hand and type '<code>/q item nettlebane</code>'. It will copy the item you're holding into the <em>items.yml</em> file and save it there with the name you specified (in this case "nettlebane"). You can skip the package name here as well.</p>
 <p>The '<code>/q give package.item</code>' command will simply give you specified item.</p>
 <p>Config subcommand is used to modify or display values in configuration files. <code>set</code> option replaces the value with what you typed, <code>add</code> simply adds your string to the existing value. (Note on spaces: by default the plugin won't insert a space between existing and added value. You can however achieve that by prefixing the string with <code>_</code> character. For example: existing string is <code>objective location</code>, and you want to add <code>100;200;300;world;10</code>. Your command will look like <code>/q config add default.events.loc_obj _100;200;300;world;10</code>). <code>read</code> option allows you to display config value without modifying it.</p>
-<p>Path in this command is like an address of the value. Next branches are separated by dots. For example language setting in main configuration has path <code>config.language</code>, and a text in "bye" player option in default quest has path <code>default.conversations.innkeeper.player_options.bye.text</code></p>
+<p>Path in this command is like an address of the value. Next branches are separated by dots. For example language setting in main configuration has path <code>config.language</code>, and a text in "bye" player option in the conversation <code>innkeeper</code> in a package named <code>example</code> quest has path <code>example.conversations.innkeeper.player_options.bye.text</code></p>
 <p>You can purge specific player with '<code>/q purge Beton</code>' command, where Beton is the name of the player. To purge the entire database at once simply change the prefix in <em>config.yml</em> or delete <em>database.db</em> file.</p>
 <p>Delete command ('<code>/q delete</code>') allows you to delete from the database every tag, point, objective or journal entry with specified name.</p>
 <p>Rename command ('<code>/q rename</code>') allows you to rename every tag, point, globalpoint, objective or journal entry in the database. In case of an objective it will also rename the objective in <em>objectives</em> section in the configuration file, so it continues to work correctly.</p>
 <p>If you want to backup your configuration and database make sure that your server is empty (this process requires all data to be saved to database -&gt; all players offline) and run '<code>/q backup</code>' command. You will get a zip file containing all your data, ready to be unzipped for restoring the plugin.</p>
 <p>Update command ('<code>/q update</code>') will try to download the newest version of the plugin and save it to the update folder. This folder is then handled by Spigot to update the plugin. If you accidentally use this command but do not wish to update the plugin, you should remove <code>BetonQuest.jar</code> file from the <code>plugins/update</code> folder before restarting/reloading the server.</p>
-<p>Using '<code>/q create beton</code>' command you will create new package named '<code>beton</code>'. It will contain the default quest.</p>
 <p>The <code>/q vector</code> command allows you to create vector variables from the specified in first argument location variable to your position. The result will be saved to the "vectors.{second argument}" variable.</p>
 <p>The debug command ('<code>/q debug</code>') allows you to enable or disable the debug mode. If the debug mode is enabled after
 server startup ('<code>/q debug true</code>'), all log entries from the configured log history time frame are written to the
@@ -2399,7 +2398,7 @@ shows all <code>WARNINGS</code> and <code>ERRORS</code> from the log. If you wan
 Beware though, the debug level might be spammy.</p>
 <p>The download command (<code>/q download</code>) can be used to download tutorial quests &amp; quest templates from
 the <a href="https://github.com/BetonQuest/Quest-Tutorials">Quest-Tutorials</a> repository. For
-example <code>/q download BetonQuest/Quest-Tutorials main QuestPackages /</code> will download the default quest and
+example <code>/q download BetonQuest/Quest-Tutorials main QuestPackages /default</code> will download the <code>default</code> tutorial quest and
 place it in the same folder. The first argument (<code>gitHubNamespace</code>) is the github repository in the format user/repo or
 organisation/repo. Before you can download from a repo you need to add the namespace to
 the <a href="../Configuration/#quest-downloader"><code>repo_whitelist</code></a> in the BetonQuest config. This is a security measure that
@@ -2417,7 +2416,7 @@ QuestTemplates folder defined as <code>type</code>. If you want to place some Qu
 do this by adding <code>../QuestTemplates/</code> to the beginning of the target path.<br />
 Additionally you can add tags to the end of the command to control behavior of the downloader:
 If <code>recursive</code> is added <a href="../Reference/#structure">nested packages</a> or templates will be downloaded while by default they
-will be skipped. The tag <code>overwrite</code> defines that already existing files may be overwritten. By default an error is
+will be skipped. The tag <code>overwrite</code> defines that already existing files may be overwritten. By default, an error is
 logged and the download is stopped.</p>
 
   
@@ -2459,7 +2458,7 @@ logged and the download is stopped.</p>
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Permissions%20%26%20Commands+-+/Documentation/Commands-and-permissions/&version=2.0.0-DEV-310"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Permissions%20%26%20Commands+-+/Documentation/Commands-and-permissions/&version=2.0.0-DEV-311"> feedback form</a>.
               
             </div>
           

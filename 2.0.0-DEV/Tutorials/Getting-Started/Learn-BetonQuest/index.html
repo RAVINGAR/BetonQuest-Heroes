@@ -2374,7 +2374,10 @@
 <p><a class="md-button md-button--primary" href="https://mcmodels.net/how-to-tutorials/betonquest-tutorials/betonquest-full-beginners-guide/?wpam_id=3">Full beginner guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg></span></a>
 <a class="md-button md-button--primary" href="#checking-out-the-default-example-quest">Quick start tutorial <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5.75.75A.75.75 0 0 1 6.5 0h3a.75.75 0 0 1 0 1.5h-.75v1l-.001.041a6.718 6.718 0 0 1 3.464 1.435l.007-.006.75-.75a.75.75 0 1 1 1.06 1.06l-.75.75-.006.007a6.75 6.75 0 1 1-10.548 0L2.72 5.03l-.75-.75a.75.75 0 0 1 1.06-1.06l.75.75.007.006A6.718 6.718 0 0 1 7.25 2.541a.756.756 0 0 1 0-.041v-1H6.5a.75.75 0 0 1-.75-.75zM8 14.5A5.25 5.25 0 1 0 8 4a5.25 5.25 0 0 0 0 10.5zm.389-6.7 1.33-1.33a.75.75 0 1 1 1.061 1.06L9.45 8.861A1.502 1.502 0 0 1 8 10.75a1.5 1.5 0 1 1 .389-2.95z"/></svg></span></a></p>
 <h2 id="checking-out-the-default-example-quest">Checking out the "default" example quest.<a class="headerlink" href="#checking-out-the-default-example-quest" title="Permanent link">🔗</a></h2>
-<p>Let's start by checking out the build in example quest. You can find it in the BetonQuest directory that has been
+<p>First you need to execute the following command to download the example quest:
+<div class="highlight"><pre><span></span><code>/q download BetonQuest/Quest-Tutorials main QuestPackages /default
+</code></pre></div></p>
+<p>Let's start by checking out the downloaded example quest. You can find it in the BetonQuest directory that has been
 generated in your plugins folder. The folder you are looking for is named "<em>QuestPackages/default/</em>".</p>
 <p>Open it up and find a file called <em>package.yml</em>. It contains a lot of options, but you only need to look at this section:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -2514,7 +2517,7 @@ be used very often in your quests. Once you're done check out the <em>Writing yo
 knowledge to write your fisrt conversation.</p>
 <h2 id="writing-your-first-conversation">Writing your first conversation<a class="headerlink" href="#writing-your-first-conversation" title="Permanent link">🔗</a></h2>
 <p>Now that you have seen BetonQuest in action and understood events, conditions and objectives, it's time for writing your
-first conversation. There's a <em>conversations</em> directory inside the default package. It contains a single file,
+first conversation. There's a <em>conversations</em> directory inside the <code>default</code> package. It contains a single file,
 <em>innkeeper.yml</em>. This is the conversation with Innkeeper, the one who asks you to cut some trees. Open it, we'll use
 that for reference. Now create a new file, let's say <em>miner.yml</em>. Now type
 (don't copy-paste it, you'll learn better while typing) that into the file:</p>
@@ -2674,7 +2677,7 @@ your Minecraft name.</p>
 <span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">I need to go, sorry.</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 <p>Now you should experiment some more with this conversation, you can help yourself by looking at the
-<a href="https://github.com/BetonQuest/BetonQuest/blob/master/src/main/resources/default/conversations/innkeeper.yml" target="_blank">innkeeper.yml</a> file.
+<a href="https://github.com/BetonQuest/Quest-Tutorials/blob/main/QuestPackages/default/conversations/innkeeper.yml" target="_blank">innkeeper.yml</a> file.
 Try to understand how that conversation works step by step. As the excercise you should complete the Miner NPC, so he
 asks you to mine some iron ore, then smelt it in the furnace, next craft an armor with it and return to him wearing this armor.</p>
 <p>You might want to check out the <a href="../../../Documentation/Reference/">Reference</a> chapter to see how to handle items in 
@@ -2720,7 +2723,7 @@ take a look at the appropriate lists (after the <em>Reference</em> chapter).</p>
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Learn%20BetonQuest+-+/Tutorials/Getting-Started/Learn-BetonQuest/&version=2.0.0-DEV-310"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Learn%20BetonQuest+-+/Tutorials/Getting-Started/Learn-BetonQuest/&version=2.0.0-DEV-311"> feedback form</a>.
               
             </div>
           

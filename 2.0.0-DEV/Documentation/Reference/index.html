@@ -3138,7 +3138,7 @@ latter is resolved when the quests are running, usually on a per-player basis.</
 <h2 id="canceling-quests">Canceling quests<a class="headerlink" href="#canceling-quests" title="Permanent link">🔗</a></h2>
 <p>If you want to let your players cancel their quest there is a function for that. In <em>package.yml</em> file there is <code>cancel</code>
 branch. You can specify there quests, which can be canceled, as well as actions that need to be done to actually cancel
-them. You can find an example in the <code>default</code> package. The arguments you can specify are:</p>
+them. The arguments you can specify are:</p>
 <ul>
 <li><code>name</code> - this will be the name displayed to the player. All <code>_</code> characters will be converted to spaces. If you want to include other languages you can add here additional options (<code>en</code> for English etc.)</li>
 <li><code>conditions</code> - this is a list of conditions separated by commas. The player needs to meet all those conditions to be able to cancel this quest. Place there the ones which detect that the player has started the quest, but he has not finished it yet. </li>
@@ -3149,7 +3149,7 @@ them. You can find an example in the <code>default</code> package. The arguments
 <li><code>events</code> - if you want to do something else when canceling the quest (like punishing the player), list the events here.</li>
 <li><code>loc</code> - this is a location to which the player will be teleported when canceling the quest (defined as in teleport event);</li>
 </ul>
-<p>To cancel the quest you need to open your backpack and select a "cancel" button (by default a bone, can be changes by naming an item "cancel_button" inside default package). There will be a list of quests which can be canceled. Just select the one that interests you and it will be canceled.</p>
+<p>To cancel the quest you need to open your backpack and select a "cancel" button. There will be a list of quests which can be canceled. Just select the one that interests you and it will be canceled.</p>
 <h2 id="global-objectives">Global objectives<a class="headerlink" href="#global-objectives" title="Permanent link">🔗</a></h2>
 <p>If you want a objective to be active for every player right after joining you can create a global objective. This is done by adding <code>global</code> argument to the instruction of the objective. When you then reload BetonQuest it is started for all online players and also will be started for every player who joins.</p>
 <p>To prevent the objective from being started every time a player joins a tag is set for the player whenever the objective is started and as long as the player has the tag the objective wont be started again if the player joins.<br />
@@ -3194,7 +3194,7 @@ You can define them in the <em>package.yml</em> file, in the <code>journal_main_
 <p>If you want your main page take a separate page (so entries will be displayed on next free page), set <code>full_main_page</code> in <em>config.yml</em> to "true".
 If you want to manually wrap the page, use the pipe <code>|</code> character. Use \n to go to a new line.</p>
 <h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">🔗</a></h2>
-<p>Tags are little pieces of text you can assign to player and then check if he has them. They are particularly useful to determine if player has started or completed quest. They are given with <code>tag</code> event and checked with <code>tag</code> condition. All tags are bound to a package, so if you add <code>beton</code> tag from within the <code>default</code> package, the tag will look like <code>default.beton</code>. If you're checking for <code>beton</code> tag from within <code>default</code> package, you're actually checking for <code>default.beton</code>. If you want to check a tag from another package, then you just need to prefix it's name with that package, for example <code>quest.beton</code>.</p>
+<p>Tags are little pieces of text you can assign to player and then check if he has them. They are particularly useful to determine if player has started or completed quest. They are given with <code>tag</code> event and checked with <code>tag</code> condition. All tags are bound to a package, so if you add <code>beton</code> tag from within a package named <code>example</code>, the tag will look like <code>example.beton</code>. If you're checking for <code>beton</code> tag from within <code>example</code> package, you're actually checking for <code>example.beton</code>. If you want to check a tag from another package, then you just need to prefix it's name with that package, for example <code>quest.beton</code>.</p>
 <h2 id="points">Points<a class="headerlink" href="#points" title="Permanent link">🔗</a></h2>
 <p>Points are like tags, but with amount. You can earn them for doing quest, talking with NPC’s, basically for everything you want. You can also take the points away, even to negative numbers. Points can be divided to categories, so the ones from <em>beton</em> category won’t mix with points from <em>quests</em> group. Of course then you can check if player has (or doesn’t have) certain amount and do something based on this condition. They can be used as counter for specific number of quest done, as a reputation system in villages and even NPC’s attitude to player.</p>
 <h2 id="npcs">NPCs<a class="headerlink" href="#npcs" title="Permanent link">🔗</a></h2>
@@ -3233,7 +3233,7 @@ the corresponding conversation name as defined in the <code>conversations</code>
 </ul>
 <p>For example <code>damage_all:3</code> is <em>Sharpness III</em>. You can specify additional enchantments by separating them with commas.</p>
 <p>You can require the item not to have any enchantments by using <code>none</code> keyword. You can also add <code>+</code>/<code>-</code> character to the enchantment level to make the check require levels greater/less (and equal) than specified. If you don't care about the level, replace the number with a question mark.</p>
-<p>By default all specified enchantments are required. If you want to check if the item contains a matching enchantment (and/or more enchants), add <code>enchants-containing</code> argument to the instruction string. Each specified enchantment will be required on the item by default unless you prefix its name with <code>none-</code>, for example <code>none-knockback</code> means that the item must not have any knockback enchantment. <strong>Do not use <code>none-</code> prefix unless you're using <code>enchants-containing</code> argument</strong>, it doesn't make any sense and will break the check!</p>
+<p>By default, all specified enchantments are required. If you want to check if the item contains a matching enchantment (and/or more enchants), add <code>enchants-containing</code> argument to the instruction string. Each specified enchantment will be required on the item by default unless you prefix its name with <code>none-</code>, for example <code>none-knockback</code> means that the item must not have any knockback enchantment. <strong>Do not use <code>none-</code> prefix unless you're using <code>enchants-containing</code> argument</strong>, it doesn't make any sense and will break the check!</p>
 </li>
 <li>
 <p><code>unbreakable</code> - this makes the item unbreakable. You can specify it either as <code>unbreakable</code> or <code>unbreakable:true</code> to require an item to be unbreakable. If you want to check if the item is breakable, use <code>unbreakable:false</code>.</p>
@@ -3294,7 +3294,7 @@ the corresponding conversation name as defined in the <code>conversations</code>
 </ul>
 <p>An example would be <code>WITHER:2:30</code>, which is a wither effect of level 2 for 30 seconds.</p>
 <p>If you want to target only potions without custom effects, use <code>none</code> keyword. You can target potions with level and time greater/less (and equal) than specified with <code>+</code>/<code>-</code> character after the number. If you don't care about the level/time, you can replace them with question mark.</p>
-<p>By default all specified effects are required. If you want to check if the potion contains these effects among others, add <code>effects-containing</code> argument to the instruction string. Now if you want to make sure the potion doesn't contain a specific effect, prefix the effect name with <code>none-</code>. <strong>Don't use that prefix unless you're also using <code>effects-containing</code> argument</strong>, it doesn't make any sense and it will break the check.</p>
+<p>By default, all specified effects are required. If you want to check if the potion contains these effects among others, add <code>effects-containing</code> argument to the instruction string. Now if you want to make sure the potion doesn't contain a specific effect, prefix the effect name with <code>none-</code>. <strong>Don't use that prefix unless you're also using <code>effects-containing</code> argument</strong>, it doesn't make any sense and it will break the check.</p>
 </li>
 </ul>
 <p><strong>Examples</strong>:</p>
@@ -3337,7 +3337,7 @@ the corresponding conversation name as defined in the <code>conversations</code>
 </ul>
 <p>Note the separation characters, this is important: commas separate effects, colons separate effect properties, semicolons separate colors.</p>
 <p>If you want to target fireworks without any effects, use <code>none</code> keyword. If you want to target any effect type, use question mark instead of the effect name. If you don't want the effect to have any main/fade colors, use <code>none</code> keyword in the place of colors. If you don't care about main/fade colors, use question marks in that place. If you don't care about trail/flicker effect, use question marks instead of <code>true</code>/<code>false</code> keyword.</p>
-<p>By default the check will require all specified effects to be present on the firework. You can check if the firework contains specified effects among others by adding <code>firework-containing</code> argument to the instruction string. To match the item which must not have an effect, prefix the effect name with <code>none-</code> keyword. <strong>Don't use that prefix unless you're also using <code>firework-containing</code> argument</strong>, it doesn't make any sense and will break the check.</p>
+<p>By default, the check will require all specified effects to be present on the firework. You can check if the firework contains specified effects among others by adding <code>firework-containing</code> argument to the instruction string. To match the item which must not have an effect, prefix the effect name with <code>none-</code> keyword. <strong>Don't use that prefix unless you're also using <code>firework-containing</code> argument</strong>, it doesn't make any sense and will break the check.</p>
 </li>
 <li>
 <p><code>power</code> - flight duration of the firework, in levels. You can use <code>+</code>/<code>-</code> character to target greater/less (and equal) levels.</p>
@@ -3508,7 +3508,7 @@ You can configure the interval which checks the conditions in the <a href="../Co
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Reference+-+/Documentation/Reference/&version=2.0.0-DEV-310"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Reference+-+/Documentation/Reference/&version=2.0.0-DEV-311"> feedback form</a>.
               
             </div>
           
