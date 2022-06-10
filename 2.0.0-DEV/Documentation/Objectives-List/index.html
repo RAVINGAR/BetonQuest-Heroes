@@ -2912,15 +2912,13 @@ next login.</p>
 </tr>
 </tbody>
 </table>
-<div class="admonition example annotate">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">delay 1440 events:resetDaily (2)</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">delay 1000 ticks interval:5 events:failQuest (1)</span><span class="w"> </span>
+<div class="highlight"><span class="filename">Example</span><pre><span></span><code><span class="nt">objectives</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">waitDay</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;delay</span><span class="nv"> </span><span class="s">1440</span><span class="nv"> </span><span class="s">events:resetDaily&quot;</span><span class="w"> </span><span class="c1">#(1)!</span><span class="w"></span>
+<span class="w">  </span><span class="nt">wait50sec</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;delay</span><span class="nv"> </span><span class="s">1000</span><span class="nv"> </span><span class="s">ticks</span><span class="nv"> </span><span class="s">interval:5</span><span class="nv"> </span><span class="s">events:failQuest&quot;</span><span class="w"> </span><span class="c1">#(2)! </span><span class="w"></span>
 </code></pre></div>
-</div>
 <ol>
-<li>Runs the <code>failQuest</code> event after 1000 ticks (50 seconds) have passed. The objective checks every 5 ticks (250ms) if the time is up.</li>
 <li>Runs the <code>resetDaily</code> event after 1440 minutes (24 hours).</li>
+<li>Runs the <code>failQuest</code> event after 1000 ticks (50 seconds) have passed. The objective checks every 5 ticks (250ms) if the time is up.</li>
 </ol>
 <h5> Variable Properties </h5>
 
@@ -2935,7 +2933,7 @@ next login.</p>
 <tbody>
 <tr>
 <td><em>left</em></td>
-<td>23 days, 5 hours and 45 minutes</td>
+<td>23 days 5 hours 45 minutes 17 seconds</td>
 <td>Shows the time left until the objective is completed.</td>
 </tr>
 <tr>
@@ -3360,7 +3358,7 @@ by what players type in chat which is only useful when you're also using the <co
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Objectives%20List+-+/Documentation/Objectives-List/&version=2.0.0-DEV-314"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Objectives%20List+-+/Documentation/Objectives-List/&version=2.0.0-DEV-315"> feedback form</a>.
               
             </div>
           
