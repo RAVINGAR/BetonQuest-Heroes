@@ -1138,7 +1138,7 @@
         <li class="md-nav__item">
   <a href="#fishing-fish" class="md-nav__link">
     <span class="md-ellipsis">
-      Fishing: fish
+       Fishing: fish
     </span>
   </a>
   
@@ -1208,9 +1208,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mob-kill-mobkill" class="md-nav__link">
+  <a href="#entity-kill-mobkill" class="md-nav__link">
     <span class="md-ellipsis">
-      Mob Kill: mobkill
+       Entity Kill: mobkill
     </span>
   </a>
   
@@ -2586,7 +2586,7 @@
         <li class="md-nav__item">
   <a href="#fishing-fish" class="md-nav__link">
     <span class="md-ellipsis">
-      Fishing: fish
+       Fishing: fish
     </span>
   </a>
   
@@ -2656,9 +2656,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mob-kill-mobkill" class="md-nav__link">
+  <a href="#entity-kill-mobkill" class="md-nav__link">
     <span class="md-ellipsis">
-      Mob Kill: mobkill
+       Entity Kill: mobkill
     </span>
   </a>
   
@@ -2958,7 +2958,7 @@ add them right after type of objective.</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">die cancel respawn:100;200;300;world;90;0 events:teleport</span><span class="w"></span>
 </code></pre></div>
 </div>
-<h2 id="fishing-fish">Fishing: <code>fish</code><a class="headerlink" href="#fishing-fish" title="Permanent link">🔗</a></h2>
+<h2 id="fishing-fish"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352.8 96.61c54.9 3.99 101.5 26.99 137.2 53.79 39.2 29.4 67.3 64.7 81.7 89.5 5.7 10 5.7 22.2 0 32.2-14.4 24.8-42.5 60.1-81.7 89.5-35.7 26.8-82.3 49.8-137.2 53.8l-77.6 58.2c-10.6 8-25 8.5-36.3 1.5-11.2-7.1-16.9-20.4-14.3-33.4l9.7-48.6c-20.2-9-36.8-19.9-53.2-31.5-14.5-11.5-29-23.9-39.9-36.3l-93.08 54.3c-12.51 7.3-28.36 5.3-38.645-4.9a31.989 31.989 0 0 1-5.258-38.6L50 256 4.217 175.9a31.989 31.989 0 0 1 5.258-38.6c10.285-10.2 26.135-12.2 38.645-4.9l93.08 54.3c10.9-12.4 25.4-24.8 39.9-36.3 16.4-11.6 33-22.5 53.2-31.5l-9.7-48.62C222 57.27 227.7 44 238.9 36.93c11.3-7.08 25.7-6.49 36.3 1.47l77.6 58.21zM416 224c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></svg></span> Fishing: <code>fish</code><a class="headerlink" href="#fishing-fish" title="Permanent link">🔗</a></h2>
 <p>Requires the player to catch something with the fishing rod. It doesn't have to be a fish, it can also be any other item.</p>
 <table>
 <thead>
@@ -3002,12 +3002,10 @@ add them right after type of objective.</p>
 </tr>
 </tbody>
 </table>
-<div class="admonition example annotate">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fish SALMON 5 notify events:tag_fish_caught (1)</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">fish COD 5 hookLocation:123;456;789;fishWorld range:10 events:giveSpecialFish (2)</span><span class="w"></span>
+<div class="highlight"><span class="filename">Example</span><pre><span></span><code><span class="nt">objectives</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">fisherman</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fish</span><span class="nv"> </span><span class="s">SALMON</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">notify</span><span class="nv"> </span><span class="s">events:tag_fish_caught&quot;</span><span class="w"> </span><span class="c1">#(1)!</span><span class="w"></span>
+<span class="w">  </span><span class="nt">fishAtPond</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fish</span><span class="nv"> </span><span class="s">COD</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">hookLocation:123;456;789;fishWorld</span><span class="nv"> </span><span class="s">range:10</span><span class="nv"> </span><span class="s">events:giveSpecialFish&quot;</span><span class="w"> </span><span class="c1">#(2)!</span><span class="w"></span>
 </code></pre></div>
-</div>
 <ol>
 <li>Requires the player to catch 5 salmon. The player will get a notification for every caught fish.</li>
 <li>Requires the player to catch 5 cod. The rod's hook must be used in a 10 block radius around <code>x:123 y:456 z:789</code> in a world named <code>fishWorld</code>.</li>
@@ -3155,21 +3153,89 @@ display a message each time the player advances the objective, optionally with t
 <span class="l l-Scalar l-Scalar-Plain">pickup emerald,diamond amount:6 events:reward notify</span><span class="w"></span>
 </code></pre></div>
 </div>
-<h2 id="mob-kill-mobkill">Mob Kill: <code>mobkill</code><a class="headerlink" href="#mob-kill-mobkill" title="Permanent link">🔗</a></h2>
-<p>The player must kill specified amount of mobs You must specify mob type first and then amount. You can find possible mob
-types here: <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html">mob types</a>. Additionally you
-can specify names for mobs with <code>name:Uber_Zombie</code>, so only killing properly named mobs counts. All <code>_</code> are replaced
-with spaces, so in this example you would have to kill 5 zombies with "Uber Zombie" above their heads. You can also
-specify <code>notify</code> keyword to display messages to the player each time he kills a mob, optionally with the notification
-interval after colon. If you want to accept only mobs marked with <code>spawn</code> event, use <code>marked:</code> argument followed by the
-keyword used in that event.</p>
-<p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of mob already killed,
-<code>left</code> is the amount of mobs still needed to kill and <code>total</code> is the amount of mobs initially required.</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mobkill ZOMBIE 5 name:Uber_Zombie conditions:night</span><span class="w"></span>
+<h2 id="entity-kill-mobkill"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a9 9 0 0 0-9 9 8.99 8.99 0 0 0 4 7.47V22h2v-3h2v3h2v-3h2v3h2v-3.54c2.47-1.65 4-4.46 4-7.46a9 9 0 0 0-9-9m-4 9a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m8 0a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m-4 3 1.5 3h-3l1.5-3Z"/></svg></span> Entity Kill: <code>mobkill</code><a class="headerlink" href="#entity-kill-mobkill" title="Permanent link">🔗</a></h2>
+<p>The player must kill the specified amount of entities (living creatures).
+All entities work, make sure to use their <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html" target="_blank">correct types</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Syntax</th>
+<th>Default Value</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>type</em></td>
+<td>ENTITY_TYPE,ENTITY_TYPE</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.404 12.596a6.5 6.5 0 1 1 9.192-9.192 6.5 6.5 0 0 1-9.192 9.192zM2.344 2.343a8 8 0 1 0 11.313 11.314A8 8 0 0 0 2.343 2.343zM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97z"/></svg></span></td>
+<td>A list of entities, e.g. <code>ZOMBIE,SKELETON</code>.</td>
+</tr>
+<tr>
+<td><em>amount</em></td>
+<td>Positive Number</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.404 12.596a6.5 6.5 0 1 1 9.192-9.192 6.5 6.5 0 0 1-9.192 9.192zM2.344 2.343a8 8 0 1 0 11.313 11.314A8 8 0 0 0 2.343 2.343zM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97z"/></svg></span></td>
+<td>Amount of mobs to kill in total.</td>
+</tr>
+<tr>
+<td><em>name</em></td>
+<td>name:text</td>
+<td>Disabled</td>
+<td>Only count named mobs. Spaces must be replaced with <code>_</code>.</td>
+</tr>
+<tr>
+<td><em>marked</em></td>
+<td>marked:keyword</td>
+<td>Disabled</td>
+<td>Only count marked mobs. See the <a href="../Events-List/#spawn-mob-spawn">spawn event</a> for more information.</td>
+</tr>
+<tr>
+<td><em>notify</em></td>
+<td>notify:interval</td>
+<td>Disabled</td>
+<td>Display a message to the player each time they kill a mob. Optionally with the notification interval after colon.</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><span class="filename">Example</span><pre><span></span><code><span class="nt">objectives</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">monsterHunter</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE,SKELETON,SPIDER</span><span class="nv"> </span><span class="s">10</span><span class="nv"> </span><span class="s">notify&quot;</span><span class="w"> </span><span class="c1">#(1)!</span><span class="w"></span>
+<span class="w">  </span><span class="nt">specialMob</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">PIG</span><span class="nv"> </span><span class="s">1</span><span class="nv"> </span><span class="s">marked:special&quot;</span><span class="w"> </span><span class="c1">#(2)!</span><span class="w"></span>
+<span class="w">  </span><span class="nt">bossZombie</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mobkill</span><span class="nv"> </span><span class="s">ZOMBIE</span><span class="nv"> </span><span class="s">1</span><span class="nv"> </span><span class="s">name:Uber_Zombie&quot;</span><span class="w"> </span><span class="c1">#(3)!</span><span class="w"></span>
 </code></pre></div>
-</div>
+<ol>
+<li>The player must kill a zombie,skeleton or a spider to progress this objective. In total, they must kill 10 entities. Additionally, there will be a notification after each kill.</li>
+<li>The player must kill a pig that was spawned with the <a href="../Events-List/#spawn-mob-spawn">spawn event</a> and has a marker. </li>
+<li>The player must kill a zombie named "Uber Zombie".</li>
+</ol>
+<h5> Variable Properties </h5>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Example Output</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>amount</em></td>
+<td>2</td>
+<td>Shows the amount of mobs already killed.</td>
+</tr>
+<tr>
+<td><em>left</em></td>
+<td>8</td>
+<td>Shows the amount of mobs that still need to be killed.</td>
+</tr>
+<tr>
+<td><em>total</em></td>
+<td>10</td>
+<td>Shows the amount of mobs initially required to kill.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="potion-brewing-brew">Potion brewing: <code>brew</code><a class="headerlink" href="#potion-brewing-brew" title="Permanent link">🔗</a></h2>
 <p>To complete this objective the player needs to brew specified amount of specified potions.
 The first argument is a potion ID from the <em>items</em> section. Second argument is amount of potions.
@@ -3358,7 +3424,7 @@ by what players type in chat which is only useful when you're also using the <co
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Objectives%20List+-+/Documentation/Objectives-List/&version=2.0.0-DEV-316"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Objectives%20List+-+/Documentation/Objectives-List/&version=2.0.0-DEV-317"> feedback form</a>.
               
             </div>
           
