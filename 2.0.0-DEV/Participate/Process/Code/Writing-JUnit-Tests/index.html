@@ -2422,16 +2422,12 @@ To use the <code>BukkitSchedulerMock</code> you need to create the following set
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@Test</span><span class="w"></span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@Test</span><span class="w"></span>
 <span class="kt">void</span><span class="w"> </span><span class="n">testMethod</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="hll"><span class="w">    </span><span class="kd">final</span><span class="w"> </span><span class="n">BukkitSchedulerMock</span><span class="w"> </span><span class="n">scheduler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BukkitSchedulerMock</span><span class="p">();</span><span class="w"></span>
-</span><span class="hll"><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">MockedStatic</span><span class="o">&lt;</span><span class="n">Bukkit</span><span class="o">&gt;</span><span class="w"> </span><span class="n">bukkit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mockStatic</span><span class="p">(</span><span class="n">Bukkit</span><span class="p">.</span><span class="na">class</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-</span><span class="hll"><span class="w">        </span><span class="n">bukkit</span><span class="p">.</span><span class="na">when</span><span class="p">(</span><span class="n">Bukkit</span><span class="p">::</span><span class="n">getScheduler</span><span class="p">).</span><span class="na">thenReturn</span><span class="p">(</span><span class="n">scheduler</span><span class="p">);</span><span class="w"></span>
-</span><span class="w">        </span><span class="p">...</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">BukkitSchedulerMock</span><span class="w"> </span><span class="n">scheduler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BukkitSchedulerMock</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</span><span class="hll"><span class="w">        </span><span class="p">...</span><span class="w"></span>
+</span><span class="hll"><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</span><span class="p">}</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 <p>Now you can use the scheduler object for several things. First if you want to perform a single or multiple ticks,
 you can call the methods <code>performTick()</code> or <code>performTicks(long)</code>:</p>
@@ -2445,12 +2441,15 @@ you can call the methods <code>performTick()</code> or <code>performTicks(long)<
 <p>There are some additional features of this scheduler:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">scheduler</span><span class="p">.</span><span class="na">shutdown</span><span class="p">();</span><span class="w"></span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">setShutdownTimeout</span><span class="p">(</span><span class="kt">long</span><span class="p">);</span><span class="w"></span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">waitAsyncTasksFinished</span><span class="p">();</span><span class="w"></span>
-<span class="n">scheduler</span><span class="p">.</span><span class="na">getNumberOfQueuedAsyncTasks</span><span class="p">();</span><span class="w"></span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">scheduler</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w"> </span><span class="c1">//(1)!</span><span class="w"></span>
+<span class="n">scheduler</span><span class="p">.</span><span class="na">waitAsyncTasksFinished</span><span class="p">(</span><span class="kt">long</span><span class="p">);</span><span class="w"> </span><span class="c1">//(2)!</span><span class="w"></span>
+<span class="n">scheduler</span><span class="p">.</span><span class="na">waitAsyncTasksFinished</span><span class="p">();</span><span class="w"> </span><span class="c1">//(3)!</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
+<ol>
+<li>Shuts down the scheduler. Already called thanks to with "try with resources".</li>
+<li>Wait for all async tasks to finish.</li>
+<li>One second timeout.</li>
+</ol>
 
   
 
@@ -2491,7 +2490,7 @@ you can call the methods <code>performTick()</code> or <code>performTicks(long)<
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Writing%20JUnit%20Tests+-+/Participate/Process/Code/Writing-JUnit-Tests/&version=2.0.0-DEV-327"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Writing%20JUnit%20Tests+-+/Participate/Process/Code/Writing-JUnit-Tests/&version=2.0.0-DEV-328"> feedback form</a>.
               
             </div>
           
