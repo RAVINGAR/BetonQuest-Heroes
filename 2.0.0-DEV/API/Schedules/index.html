@@ -10,7 +10,7 @@
         <meta name="author" content="BetonQuest Organisation">
       
       
-        <link rel="canonical" href="https://docs.betonquest.org/2.0.0-DEV/Documentation/Conversations/">
+        <link rel="canonical" href="https://docs.betonquest.org/2.0.0-DEV/API/Schedules/">
       
       
         
@@ -20,7 +20,7 @@
     
     
       
-        <title>Conversations - BetonQuest</title>
+        <title>Schedules - BetonQuest</title>
       
     
     
@@ -188,7 +188,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#general-information" class="md-skip">
+        <a href="#schedules" class="md-skip">
           Skip to content
         </a>
       
@@ -226,7 +226,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Conversations
+              Schedules
             
           </span>
         </div>
@@ -359,8 +359,6 @@
       
         
 
-  
-
 
 
 
@@ -374,7 +372,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../Documentation/Conversations/" class="md-tabs__link">
           
   
   Documentation
@@ -390,6 +388,8 @@
       
         
 
+  
+
 
 
 
@@ -398,7 +398,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../API/Overview/" class="md-tabs__link">
+        <a href="../Overview/" class="md-tabs__link md-tabs__link--active">
           
   
   API
@@ -807,8 +807,6 @@
 
   
   
-    
-  
   
     
     
@@ -825,11 +823,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
         
         
           <label class="md-nav__link" for="__nav_3">
@@ -853,8 +851,6 @@
                 
   
   
-    
-  
   
     
     
@@ -867,11 +863,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
         
         
           <label class="md-nav__link" for="__nav_3_1">
@@ -895,28 +891,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M6 9h12v2H6m8 3H6v-2h8m4-4H6V6h12"/></svg>
-  
-  <span class="md-ellipsis">
-    Conversations
-  </span>
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Documentation/Conversations/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M6 9h12v2H6m8 3H6v-2h8m4-4H6V6h12"/></svg>
@@ -926,87 +903,6 @@
   </span>
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#general-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      General Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cross-conversation-pointers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cross-conversation pointers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conversation-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversation variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#translations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Translations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conversation-displaying" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversation displaying
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chat-interceptors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chat Interceptors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-extends" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced: Extends
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1018,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/" class="md-nav__link">
+      <a href="../../Documentation/Reference/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75V1.75zm8.755 3a2.25 2.25 0 0 1 2.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574z"/></svg>
@@ -1095,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Objectives-List/" class="md-nav__link">
+      <a href="../../Documentation/Objectives-List/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9Z"/></svg>
@@ -1116,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Events-List/" class="md-nav__link">
+      <a href="../../Documentation/Events-List/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.429 1.525a6.593 6.593 0 0 1 1.142 0c.036.003.108.036.137.146l.289 1.105c.147.56.55.967.997 1.189.174.086.341.183.501.29.417.278.97.423 1.53.27l1.102-.303c.11-.03.175.016.195.046.219.31.41.641.573.989.014.031.022.11-.059.19l-.815.806c-.411.406-.562.957-.53 1.456a4.588 4.588 0 0 1 0 .582c-.032.499.119 1.05.53 1.456l.815.806c.08.08.073.159.059.19a6.494 6.494 0 0 1-.573.99c-.02.029-.086.074-.195.045l-1.103-.303c-.559-.153-1.112-.008-1.529.27-.16.107-.327.204-.5.29-.449.222-.851.628-.998 1.189l-.289 1.105c-.029.11-.101.143-.137.146a6.613 6.613 0 0 1-1.142 0c-.036-.003-.108-.037-.137-.146l-.289-1.105c-.147-.56-.55-.967-.997-1.189a4.502 4.502 0 0 1-.501-.29c-.417-.278-.97-.423-1.53-.27l-1.102.303c-.11.03-.175-.016-.195-.046a6.492 6.492 0 0 1-.573-.989c-.014-.031-.022-.11.059-.19l.815-.806c.411-.406.562-.957.53-1.456a4.587 4.587 0 0 1 0-.582c.032-.499-.119-1.05-.53-1.456l-.815-.806c-.08-.08-.073-.159-.059-.19a6.44 6.44 0 0 1 .573-.99c.02-.029.086-.075.195-.045l1.103.303c.559.153 1.112.008 1.529-.27.16-.107.327-.204.5-.29.449-.222.851-.628.998-1.189l.289-1.105c.029-.11.101-.143.137-.146zM8 0c-.236 0-.47.01-.701.03-.743.065-1.29.615-1.458 1.261l-.29 1.106c-.017.066-.078.158-.211.224a5.994 5.994 0 0 0-.668.386c-.123.082-.233.09-.3.071L3.27 2.776c-.644-.177-1.392.02-1.82.63a7.977 7.977 0 0 0-.704 1.217c-.315.675-.111 1.422.363 1.891l.815.806c.05.048.098.147.088.294a6.084 6.084 0 0 0 0 .772c.01.147-.038.246-.088.294l-.815.806c-.474.469-.678 1.216-.363 1.891.2.428.436.835.704 1.218.428.609 1.176.806 1.82.63l1.103-.303c.066-.019.176-.011.299.071.213.143.436.272.668.386.133.066.194.158.212.224l.289 1.106c.169.646.715 1.196 1.458 1.26a8.094 8.094 0 0 0 1.402 0c.743-.064 1.29-.614 1.458-1.26l.29-1.106c.017-.066.078-.158.211-.224a5.98 5.98 0 0 0 .668-.386c.123-.082.233-.09.3-.071l1.102.302c.644.177 1.392-.02 1.82-.63.268-.382.505-.789.704-1.217.315-.675.111-1.422-.364-1.891l-.814-.806c-.05-.048-.098-.147-.088-.294a6.1 6.1 0 0 0 0-.772c-.01-.147.039-.246.088-.294l.814-.806c.475-.469.679-1.216.364-1.891a7.992 7.992 0 0 0-.704-1.218c-.428-.609-1.176-.806-1.82-.63l-1.103.303c-.066.019-.176.011-.299-.071a5.991 5.991 0 0 0-.668-.386c-.133-.066-.194-.158-.212-.224L10.16 1.29C9.99.645 9.444.095 8.701.031A8.094 8.094 0 0 0 8 0zm1.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
@@ -1137,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Conditions-List/" class="md-nav__link">
+      <a href="../../Documentation/Conditions-List/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 0 1 9 6.25c0 .177-.04.264-.077.318a.956.956 0 0 1-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 0 0-.313.195 2.416 2.416 0 0 0-.692.661.75.75 0 0 0 1.248.832.956.956 0 0 1 .276-.245 6.3 6.3 0 0 1 .26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 0 0 8 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 1 0 1.342.67z"/></svg>
@@ -1158,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Compatibility/" class="md-nav__link">
+      <a href="../../Documentation/Compatibility/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 6h3l3.29-3.3a1 1 0 0 1 1.42 0l2.58 2.59a1 1 0 0 1 0 1.41L19 9h-8v2a1 1 0 0 1-1 1 1 1 0 0 1-1-1V8a2 2 0 0 1 2-2m-6 5v4l-2.29 2.29a1 1 0 0 0 0 1.41l2.58 2.59a1 1 0 0 0 1.42 0L11 17h4a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 1-1v-1h-7v1a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9Z"/></svg>
@@ -1179,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Variables-List/" class="md-nav__link">
+      <a href="../../Documentation/Variables-List/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3l-1.6.7m5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3h-1.4m3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6Z"/></svg>
@@ -1200,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Schedules/" class="md-nav__link">
+      <a href="../../Documentation/Schedules/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 4.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 .471.696l2.5 1a.75.75 0 0 0 .557-1.392L8.5 7.742V4.75z"/></svg>
@@ -1269,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notification-Settings/" class="md-nav__link">
+      <a href="../../Documentation/Notification-Settings/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.84-5 6.7v2.07c4-.91 7-4.49 7-8.77 0-4.28-3-7.86-7-8.77M16.5 12c0-1.77-1-3.29-2.5-4.03V16c1.5-.71 2.5-2.24 2.5-4M3 9v6h4l5 5V4L7 9H3Z"/></svg>
@@ -1290,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Notification-IO%27s-%26-Categories/" class="md-nav__link">
+      <a href="../../Documentation/Notification-IO%27s-%26-Categories/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.53 1.45-1.08 1.08 1.6 1.6c.22.25.33.54.33.87s-.11.64-.33.86L11.5 9.47l1 1.08 3.63-3.61c.53-.59.79-1.24.79-1.94s-.26-1.36-.79-1.95l-1.6-1.6m-3.98 2.02L9.47 4.55l.61.56c.22.22.33.52.33.89s-.11.67-.33.89l-.61.56 1.08 1.08.56-.61c.53-.59.8-1.23.8-1.92 0-.72-.27-1.37-.8-1.97l-.56-.56M21 5.06c-.69 0-1.33.27-1.92.8l-5.63 5.64 1.08 1 5.58-5.56c.25-.25.55-.38.89-.38s.64.13.89.38l.61.61 1.03-1.08-.56-.61c-.59-.53-1.25-.8-1.97-.8M7 8 2 22l14-5-9-9m12 3.06c-.7 0-1.34.27-1.94.8l-1.59 1.59 1.08 1.08 1.59-1.59c.25-.25.53-.38.86-.38.33 0 .63.13.88.38l1.62 1.59 1.05-1.03-1.6-1.64c-.59-.53-1.25-.8-1.95-.8Z"/></svg>
@@ -1363,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Menu-Menu/" class="md-nav__link">
+      <a href="../../Documentation/Menu-Menu/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17V5H3v12h18m0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5v2H8v-2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h18M5 7h6v4H5V7m0 6h6v2H5v-2m8-6h6v2h-6V7m0 4h6v4h-6v-4Z"/></svg>
@@ -1384,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Menu-Elements/" class="md-nav__link">
+      <a href="../../Documentation/Menu-Elements/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2Z"/></svg>
@@ -1405,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Menu-Commands/" class="md-nav__link">
+      <a href="../../Documentation/Menu-Commands/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5 5.5c1.09 0 2-.92 2-2a2 2 0 0 0-2-2c-1.11 0-2 .88-2 2 0 1.08.89 2 2 2M9.89 19.38l1-4.38L13 17v6h2v-7.5l-2.11-2 .61-3A7.29 7.29 0 0 0 19 13v-2c-1.91 0-3.5-1-4.31-2.42l-1-1.58c-.4-.62-1-1-1.69-1-.31 0-.5.08-.81.08L6 8.28V13h2V9.58l1.79-.7L8.19 17l-4.9-1-.4 2 7 1.38Z"/></svg>
@@ -1426,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Menu-Config/" class="md-nav__link">
+      <a href="../../Documentation/Menu-Config/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M507.6 122.8c-2.904-12.09-18.25-16.13-27.04-7.338l-76.55 76.56h-83.1v-83.1l76.55-76.56c8.791-8.79 4.75-24.14-7.336-27.04-23.69-5.693-49.34-6.111-75.92.248-61.45 14.7-109.4 66.9-119.2 129.3-5.204 25.93-2.704 51.83 5.096 75.23L22 388.2C-6.12 416.32-6.12 461.89 22 490c13.16 14.1 31.56 22 49.1 22s36.84-7.031 50.91-21.09l178.1-178.1c23.46 7.736 49.31 10.24 76.17 6.004 62.41-9.84 114.6-57.8 129.3-119.2 8.12-27.514 7.72-53.114 2.02-76.814zM80 456c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.3-10.75 24-24 24z"/></svg>
@@ -1499,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Commands-and-permissions/" class="md-nav__link">
+      <a href="../../Documentation/Commands-and-permissions/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M80 192v-48C80 64.47 144.5 0 224 0s144 64.47 144 144v48h16c35.3 0 64 28.7 64 64v192c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V256c0-35.3 28.65-64 64-64h16zm64 0h160v-48c0-44.18-35.8-80-80-80s-80 35.82-80 80v48z"/></svg>
@@ -1540,7 +1436,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Updating/" class="md-nav__link ">
+            <a href="../../Documentation/Updating/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg>
@@ -1572,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Updating/Migration/" class="md-nav__link">
+      <a href="../../Documentation/Updating/Migration/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16v-6H5l7-7 7 7h-4v6H9m-4 4v-2h14v2H5Z"/></svg>
@@ -1601,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Configuration/" class="md-nav__link">
+      <a href="../../Documentation/Configuration/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M507.6 122.8c-2.904-12.09-18.25-16.13-27.04-7.338l-76.55 76.56h-83.1v-83.1l76.55-76.56c8.791-8.79 4.75-24.14-7.336-27.04-23.69-5.693-49.34-6.111-75.92.248-61.45 14.7-109.4 66.9-119.2 129.3-5.204 25.93-2.704 51.83 5.096 75.23L22 388.2C-6.12 416.32-6.12 461.89 22 490c13.16 14.1 31.56 22 49.1 22s36.84-7.031 50.91-21.09l178.1-178.1c23.46 7.736 49.31 10.24 76.17 6.004 62.41-9.84 114.6-57.8 129.3-119.2 8.12-27.514 7.72-53.114 2.02-76.814zM80 456c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.3-10.75 24-24 24z"/></svg>
@@ -1622,7 +1518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CHANGELOG/" class="md-nav__link">
+      <a href="../../Documentation/CHANGELOG/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1658,6 +1554,8 @@
 
   
   
+    
+  
   
     
     
@@ -1672,11 +1570,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
         
         
           <label class="md-nav__link" for="__nav_4">
@@ -1702,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../API/Overview/" class="md-nav__link">
+      <a href="../Overview/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 6h3l3.29-3.3a1 1 0 0 1 1.42 0l2.58 2.59a1 1 0 0 1 0 1.41L19 9h-8v2a1 1 0 0 1-1 1 1 1 0 0 1-1-1V8a2 2 0 0 1 2-2m-6 5v4l-2.29 2.29a1 1 0 0 0 0 1.41l2.58 2.59a1 1 0 0 0 1.42 0L11 17h4a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 1-1v-1h-7v1a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9Z"/></svg>
@@ -1723,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../API/API/" class="md-nav__link">
+      <a href="../API/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.429 1.525a6.593 6.593 0 0 1 1.142 0c.036.003.108.036.137.146l.289 1.105c.147.56.55.967.997 1.189.174.086.341.183.501.29.417.278.97.423 1.53.27l1.102-.303c.11-.03.175.016.195.046.219.31.41.641.573.989.014.031.022.11-.059.19l-.815.806c-.411.406-.562.957-.53 1.456a4.588 4.588 0 0 1 0 .582c-.032.499.119 1.05.53 1.456l.815.806c.08.08.073.159.059.19a6.494 6.494 0 0 1-.573.99c-.02.029-.086.074-.195.045l-1.103-.303c-.559-.153-1.112-.008-1.529.27-.16.107-.327.204-.5.29-.449.222-.851.628-.998 1.189l-.289 1.105c-.029.11-.101.143-.137.146a6.613 6.613 0 0 1-1.142 0c-.036-.003-.108-.037-.137-.146l-.289-1.105c-.147-.56-.55-.967-.997-1.189a4.502 4.502 0 0 1-.501-.29c-.417-.278-.97-.423-1.53-.27l-1.102.303c-.11.03-.175-.016-.195-.046a6.492 6.492 0 0 1-.573-.989c-.014-.031-.022-.11.059-.19l.815-.806c.411-.406.562-.957.53-1.456a4.587 4.587 0 0 1 0-.582c.032-.499-.119-1.05-.53-1.456l-.815-.806c-.08-.08-.073-.159-.059-.19a6.44 6.44 0 0 1 .573-.99c.02-.029.086-.075.195-.045l1.103.303c.559.153 1.112.008 1.529-.27.16-.107.327-.204.5-.29.449-.222.851-.628.998-1.189l.289-1.105c.029-.11.101-.143.137-.146zM8 0c-.236 0-.47.01-.701.03-.743.065-1.29.615-1.458 1.261l-.29 1.106c-.017.066-.078.158-.211.224a5.994 5.994 0 0 0-.668.386c-.123.082-.233.09-.3.071L3.27 2.776c-.644-.177-1.392.02-1.82.63a7.977 7.977 0 0 0-.704 1.217c-.315.675-.111 1.422.363 1.891l.815.806c.05.048.098.147.088.294a6.084 6.084 0 0 0 0 .772c.01.147-.038.246-.088.294l-.815.806c-.474.469-.678 1.216-.363 1.891.2.428.436.835.704 1.218.428.609 1.176.806 1.82.63l1.103-.303c.066-.019.176-.011.299.071.213.143.436.272.668.386.133.066.194.158.212.224l.289 1.106c.169.646.715 1.196 1.458 1.26a8.094 8.094 0 0 0 1.402 0c.743-.064 1.29-.614 1.458-1.26l.29-1.106c.017-.066.078-.158.211-.224a5.98 5.98 0 0 0 .668-.386c.123-.082.233-.09.3-.071l1.102.302c.644.177 1.392-.02 1.82-.63.268-.382.505-.789.704-1.217.315-.675.111-1.422-.364-1.891l-.814-.806c-.05-.048-.098-.147-.088-.294a6.1 6.1 0 0 0 0-.772c-.01-.147.039-.246.088-.294l.814-.806c.475-.469.679-1.216.364-1.891a7.992 7.992 0 0 0-.704-1.218c-.428-.609-1.176-.806-1.82-.63l-1.103.303c-.066.019-.176.011-.299-.071a5.991 5.991 0 0 0-.668-.386c-.133-.066-.194-.158-.212-.224L10.16 1.29C9.99.645 9.444.095 8.701.031A8.094 8.094 0 0 0 8 0zm1.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
@@ -1744,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../API/Logging/" class="md-nav__link">
+      <a href="../Logging/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2H5m0 2h14v14H5V5m2 2v2h10V7H7m0 4v2h10v-2H7m0 4v2h7v-2H7Z"/></svg>
@@ -1763,9 +1661,30 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../API/Schedules/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 4.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 .471.696l2.5 1a.75.75 0 0 0 .557-1.392L8.5 7.742V4.75z"/></svg>
+  
+  <span class="md-ellipsis">
+    Schedules
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 4.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 .471.696l2.5 1a.75.75 0 0 0 .557-1.392L8.5 7.742V4.75z"/></svg>
@@ -1775,6 +1694,77 @@
   </span>
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-schedule-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a new schedule type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a new schedule type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schedule-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduler-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduler Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-the-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register the type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2314,6 +2304,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2322,65 +2314,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general-information" class="md-nav__link">
+  <a href="#api-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      General Information
+      API Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cross-conversation-pointers" class="md-nav__link">
+  <a href="#creating-a-new-schedule-type" class="md-nav__link">
     <span class="md-ellipsis">
-      Cross-conversation pointers
+      Creating a new schedule type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a new schedule type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schedule-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule Class
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conversation-variables" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#scheduler-class" class="md-nav__link">
     <span class="md-ellipsis">
-      Conversation variables
+      Scheduler Class
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#translations" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#register-the-type" class="md-nav__link">
     <span class="md-ellipsis">
-      Translations
+      Register the type
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conversation-displaying" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversation displaying
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chat-interceptors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chat Interceptors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-extends" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced: Extends
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2396,163 +2376,238 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/docs/Documentation/Conversations.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/BetonQuest/BetonQuest/edit/master/docs/API/Schedules.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Conversations</h1>
+<h1 id="schedules">Schedules<a class="headerlink" href="#schedules" title="Permanent link">🔗</a></h1>
+<details class="warning">
+<summary>API State: <code>Unfinished</code></summary>
+<p><strong>BetonQuest 2.0 is currently in development.</strong><br />
+This will take some time. Any part of the API may change more than once during development.
+Sure, any API is supposed to be stable. But we cannot guarantee this - BetonQuest 2.0 includes many redesigns
+of core concepts. It's possible that these turn out to be flawed.<br />
+However, API states help you understand how finalized an API part is.</p>
+<p><h3><u>Unfinished</u> </h3>
+This part of the API is brand-new.
+It will be changed if there are any bugs, missing features or usability improvements.</p>
+<p><strong>It is not recommended relying on this part of the API, it will most likely change.</strong></p>
+<p><h3><u>Draft</u></h3>
+Our own usage and testing has shown that this part of the API is complete and seems bug free.
+However, other plugins may have other use cases which are not covered by our testing.
+Therefore, please go ahead and use this API part. Let us know if there are missing features or bugs.
+This API part will be changed if there are more bugs, missing features or usability improvements.</p>
+<p><strong>Please use this part of the API and give us feedback!</strong></p>
+<p><h3><u>Stable</u></h3>
+Both our own and third party testing showed that this part of the API is complete.
+Only bugs and major conceptual problems would lead to more changes.</p>
+<p><strong>This part of the API should be safe to use. We try to keep it compatible with previous versions if changes are needed.</strong></p>
+</details>
+<hr />
+<p>If the native <a href="../../Documentation/Schedules/">schedule</a> types are not enough for you, this API enables you to create your own type.</p>
+<h2 id="api-overview">API Overview<a class="headerlink" href="#api-overview" title="Permanent link">🔗</a></h2>
+<p><img alt="" src="../../_media/content/API/Schedules/Schedule-dark.svg#only-dark" />
+<img alt="" src="../../_media/content/API/Schedules/Schedule-light.svg#only-light" /></p>
+<h2 id="creating-a-new-schedule-type">Creating a new schedule type<a class="headerlink" href="#creating-a-new-schedule-type" title="Permanent link">🔗</a></h2>
+<p>To implement a new schedule type you have to create both the Schedule and the Scheduler class.</p>
+<details class="abstract">
+<summary>About this guide</summary>
+<p>This guide will show you how to create a custom schedule that runs every <code>x</code> ticks, just like a redstone clock.<br />
+While this does not make that much sense, it is a super simple example to show the principle.</p>
+</details>
+<h3 id="schedule-class">Schedule Class<a class="headerlink" href="#schedule-class" title="Permanent link">🔗</a></h3>
+<p>The schedule class must hold all the schedules' data. When reloading BetonQuest will try to parse all packages and
+construct new instances of this class.</p>
+<p>Have a look at this example to see how to implement your own schedule.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example Schedule</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyCustomSchedule</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Schedule</span><span class="cm">/* (1)! */</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-<h2 id="general-information">General Information<a class="headerlink" href="#general-information" title="Permanent link">🔗</a></h2>
-<p>Each conversation must define name of the NPC 
-(some conversations can be not bound to any NPC, so it’s important to specify it even though an NPC will have a name) and his initial options.
-<div class="highlight"><pre><span></span><code><span class="nt">conversations</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">conversationName</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">quester</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Name</span><span class="w"></span>
-<span class="w">    </span><span class="nt">first</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">option1, option2</span><span class="w"></span>
-<span class="w">    </span><span class="nt">stop</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">final_events</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">event1, event2</span><span class="w"></span>
-<span class="w">    </span><span class="nt">interceptor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">simple</span><span class="w"></span>
-<span class="w">    </span><span class="nt">NPC_options</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">option1</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Some text in default language</span><span class="w"></span>
-<span class="w">        </span><span class="nt">events</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">event3, event4</span><span class="w"></span>
-<span class="w">        </span><span class="nt">conditions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">condition1, !condition2</span><span class="w"></span>
-<span class="w">        </span><span class="nt">pointers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reply1, reply2</span><span class="w"></span>
-<span class="w">      </span><span class="nt">option2</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&amp;3This</span><span class="nv"> </span><span class="s">ends</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">conversation&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">player_options</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">reply1</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="nt">en</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Text in English</span><span class="w"></span>
-<span class="w">          </span><span class="nt">pl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Tekst po polsku</span><span class="w"></span>
-<span class="w">        </span><span class="nt">event</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">event5</span><span class="w"></span>
-<span class="w">        </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;!condition3&#39;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">pointer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">option2</span><span class="w"></span>
-<span class="w">      </span><span class="nt">reply2</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Text</span><span class="nv"> </span><span class="s">containing</span><span class="nv"> </span><span class="se">&#39;&#39;</span><span class="nv"> </span><span class="s">character&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ticks</span><span class="p">,</span><span class="w"> </span><span class="n">rebootSleep</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// (2)!</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">MyCustomSchedule</span><span class="p">(</span><span class="n">ScheduleID</span><span class="w"> </span><span class="n">scheduleID</span><span class="p">,</span><span class="w"> </span><span class="n">ConfigurationSection</span><span class="w"> </span><span class="n">instruction</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">InstructionParseException</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">        </span><span class="kd">super</span><span class="p">(</span><span class="n">scheduleID</span><span class="p">,</span><span class="w"> </span><span class="n">instruction</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">ticks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">getTime</span><span class="p">()</span><span class="cm">/* (3)! */</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">NumberFormatException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InstructionParseException</span><span class="p">(</span><span class="s">&quot;Time is not a number&quot;</span><span class="p">);</span><span class="c1">// (4)!</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">getCatchup</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">CatchupStrategy</span><span class="p">.</span><span class="na">NONE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="c1">// (5)!</span><span class="w"></span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InstructionParseException</span><span class="p">(</span><span class="s">&quot;Catchup &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">getCatchup</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; is not supported by this schedule type&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">rebootSleep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instruction</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">&quot;options.rebootSleep&quot;</span><span class="p">);</span><span class="c1">// (6)!</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getTicks</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">ticks</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getRebootSleep</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">rebootSleep</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>
+<p>You can extend either <code>Schedule</code> or <code>CronSchedule</code>. <br />
+    The latter has already implemented all cron parsing logic.</p>
+</li>
+<li>
+<p>You need to define a Constructor that matches <strong>exactly</strong> this one.<br />
+<strong>Otherwise BetonQuest can't parse your schedule!</strong></p>
+</li>
+<li>
+<p><code>getTime()</code>/<code>super.time</code> provides the raw time string.<br />
+    You'll need to parse it and add your own logic.<br />
+<em>In this example we just use it as interval of ticks.</em></p>
+</li>
+<li>
+<p>Make sure to handle all parsing errors &amp; thrown exceptions!<br />
+   If a schedule can't be loaded due to an invalid instruction,
+   you should throw a <code>InstructionParseException</code> that describes
+   the error.</p>
+</li>
+<li>
+<p>You'll have to implement your own handling of catchup strategies
+    in the <a href="#scheduler-class"><code>Scheduler</code></a> class.<br />
+<strong>If you don't want that, you can add this check if a CatchupStrategy
+    was defined and throw an Exception.</strong></p>
+</li>
+<li>
+<p>This is how you add custom options, if needed.</p>
+</li>
+</ol>
+<h3 id="scheduler-class">Scheduler Class<a class="headerlink" href="#scheduler-class" title="Permanent link">🔗</a></h3>
+<p>The scheduler will receive parsed schedules using <code>addSchedule(S)</code> and hold them in the <code>schedules</code> map.<br />
+It should contain all the scheduling &amp; schedule execution logic.<br />
+It is also responsible for catching up missed schedules, if they have a catchup strategy other than <code>NONE</code> defined.</p>
+<p>Here is a pretty basic example, that does not provide any catchup logic:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example Scheduler</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyCustomScheduler</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Scheduler</span><span class="o">&lt;</span><span class="n">MyCustomSchedule</span><span class="o">&gt;</span><span class="cm">/* (1)! */</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">BukkitTask</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tasks</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="nd">@Override</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">start</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">start</span><span class="p">();</span><span class="c1">// (2)!</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">tasks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">MyCustomSchedule</span><span class="w"> </span><span class="n">schedule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">schedules</span><span class="p">.</span><span class="na">values</span><span class="p">()</span><span class="cm">/* (3)! */</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// (4)!</span><span class="w"></span>
+<span class="w">            </span><span class="n">BukkitTask</span><span class="w"> </span><span class="n">task</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BukkitRunnable</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nd">@Override</span><span class="w"></span>
+<span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                    </span><span class="n">executeEvents</span><span class="p">(</span><span class="n">schedule</span><span class="p">);</span><span class="w"></span>
+<span class="w">                </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">}.</span><span class="na">runTaskTimer</span><span class="p">(</span><span class="n">MyPlugin</span><span class="p">.</span><span class="na">getInstance</span><span class="p">()</span><span class="cm">/* (5)! */</span><span class="p">,</span><span class="w"> </span><span class="n">schedule</span><span class="p">.</span><span class="na">getRebootSleep</span><span class="p">(),</span><span class="w"> </span><span class="n">schedule</span><span class="p">.</span><span class="na">getTicks</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">            </span><span class="n">tasks</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">task</span><span class="p">);</span><span class="c1">// (6)!</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="nd">@Override</span><span class="w"></span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">stop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">stop</span><span class="p">();</span><span class="c1">// (7)!</span><span class="w"></span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">BukkitTask</span><span class="w"> </span><span class="n">task</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">tasks</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">task</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span><span class="c1">// (8)! </span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>
+<p>Your scheduler must extend <code>Scheduler</code> class.<br />
+    Between <code>&lt;&gt;</code> you have to put the name of your Schedule class.</p>
+</li>
+<li>
+<p><strong>Always remember to call <code>super.start()</code> in your <code>start()</code> method!</strong></p>
+</li>
+<li>
+<p>An easy way to iterate over all loaded schedules.</p>
+</li>
+<li>
+<p>Schedule your events to run when their time instruction says.</p>
+</li>
+<li>
+<p>Pass your plugin instance for the Bukkit-Scheduler.</p>
+</li>
+<li>
+<p>Keep a list of all your active schedules somewhere, so you can easily cancel them.</p>
+</li>
+<li>
+<p><strong>Always remember to call <code>super.stop()</code> in your <code>stop()</code> method!</strong></p>
+</li>
+<li>
+<p>Make sure to cancel all active schedules in <code>stop()</code> method.</p>
+</li>
+</ol>
+<h3 id="register-the-type">Register the type<a class="headerlink" href="#register-the-type" title="Permanent link">🔗</a></h3>
+<p>To register the new schedule type to BetonQuest, use the following method:
+<div class="highlight"><pre><span></span><code><span class="n">BetonQuest</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">registerScheduleType</span><span class="p">(</span><span class="s">&quot;redstoneScheduler&quot;</span><span class="cm">/* (1)! */</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">MyCustomSchedule</span><span class="p">.</span><span class="na">class</span><span class="cm">/* (2)! */</span><span class="p">,</span><span class="k">new</span><span class="w"> </span><span class="n">MyCustomScheduler</span><span class="p">()</span><span class="cm">/* (3)! */</span><span class="p">);</span><span class="w"></span>
 </code></pre></div></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Configuration files use YAML syntax. Google it if you don't know anything about it. Main rule is that you must use two spaces instead of tabs when going deeper into the hierarchy tree. If you want to write <code>'</code> character, you must double it and surround the whole text with another <code>'</code> characters. When writing <code>true</code> or <code>false</code> it also needs to be surrounded with <code>'</code>. If you want to start the line with <code>&amp;</code> character, the whole line needs to be surrounded with <code>'</code>. You can check if the file is correct using <a href="http://www.yamllint.com">this tool</a>.</p>
-</div>
-<ul>
-<li><code>conversations</code> defines the section as a conversation section.</li>
-<li><code>ConversationName</code> is the name of the conversation, which you assign then to an NPC in the <code>npcs</code> section. Alternatively, you can combine <code>conversations</code> and <code>ConversationName</code> and use <code>conversations.ConversationName</code> instead.</li>
-<li><code>quester</code> is name of NPC. It should be the same as name of NPC this conversation is assigned to for greater immersion, but it's your call.</li>
-<li><code>first</code> are pointers to options the NPC will use at the beginning of the conversation. He will choose the first one that meets all conditions. You define these options in <code>npc_options</code> branch.</li>
-<li><code>final_events</code> are events that will fire on conversation end, no matter how it ends (so you can create e.g. guards attacking the player if he tries to run). You can leave this option out if you don't need any final events.</li>
-<li><code>stop</code> determines if player can move away from an NPC while in this conversation (false) or if he's stopped every time he tries to (true). If enabled, it will also suspend the conversation when the player quits, and resume it after he joins back in. This way he will have to finish his conversation no matter what. <em>It needs to be in <code>''</code>!</em> You can modify the distance at which the conversation is ended / player is moved back with <code>max_npc_distance</code> option in the <em>config.yml</em>.</li>
-<li><code>interceptor</code> optionally set a chat interceptor for this conversation. Multiple interceptors can be provided in a comma-separated list with the first valid one used.</li>
-<li><code>NPC_options</code> is a branch with texts said by the NPC.</li>
-<li><code>player_options</code> is a branch with options the player can choose.</li>
-<li><code>text</code> defines what will display on screen. If you don't want to set any events/conditions/pointers to the option, just skip them. Only <code>text</code> is always required.</li>
-<li><code>conditions</code> are names of conditions which must be met for this option to display, separated by commas.</li>
-<li><code>events</code> is a list of events that will fire when an option is chosen (either by NPC or a player), defined similarly to conditions.</li>
-<li><code>pointer</code> is list of pointers to the opposite branch (from NPC branch it will point to options player can choose from when answering, and from player branch it will point to different NPC reactions).</li>
-</ul>
-<p>When an NPC wants to say something he will check conditions for the first option (in this case <code>option1</code>). If they are met, he will choose it. Otherwise, he will skip to next option (note: conversation ends when there are no options left to choose). After choosing an option NPC will execute any events defined in it, say it, and then the player will see options defined in <code>player_options</code> branch to which <code>pointers</code> setting points, in this case <code>reply1</code> and <code>reply2</code>. If the conditions for the player option are not met, the option is simply not displayed, similar to texts from NPC. Player will choose option he wants, and it will point back to other NPC text, which points to next player options and so on.</p>
-<p>If there are no possible options for player or NPC (either from not meeting any conditions or being not defined) the conversations ends. If the conversation ends unexpectedly, check the console - it could be an error in the configuration.</p>
-<p>This can and will be a little confusing, so you should name your options, conditions and events in a way which you will understand in the future. Don't worry though, if you make some mistake in configuration, the plugin will tell you this in console when testing a conversation.</p>
-<h2 id="cross-conversation-pointers">Cross-conversation pointers<a class="headerlink" href="#cross-conversation-pointers" title="Permanent link">🔗</a></h2>
-<p>If you want to create a conversation with multiple NPCs at once or split a huge conversation into smaller, more focused files, you can point to NPC options in other conversations. Just type the pointer as <code>conversation.npc_option</code>.</p>
-<p>Keep in mind that you can only cross-point to NPC options. It means that you can use those pointers only in <code>first</code> starting options and in all player options. Using them in NPC options will throw errors.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This does not work across packages yet.</p>
-</div>
-<h2 id="conversation-variables">Conversation variables<a class="headerlink" href="#conversation-variables" title="Permanent link">🔗</a></h2>
-<p>You can use variables in the conversations. They will be resolved and displayed to the player when he starts a conversation. A variable generally looks like that: <code>%type.optional.arguments%</code>. Type is a mandatory argument, it defines what kind of variable it is. Optional arguments depend on the type of the variable, i.e. <code>%npc%</code> does not have any additional arguments, but <code>%player%</code> can also have <code>display</code> (it will look like that: <code>%player.display%</code>). You can find a list of all available variable types in the "Variables List" chapter.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you use a variable incorrectly (for example trying to get a property of an objective which isn't active for the player, or using %npc% in <code>message</code> event), the variable will be replaced with empty string ("").</p>
-</div>
-<h2 id="translations">Translations<a class="headerlink" href="#translations" title="Permanent link">🔗</a></h2>
-<p>As you can see in this example conversation, there are additional messages in other languages. That's because you can translate your conversations into multiple languages. The players will be able to choose their preferred one with <strong>/questlang</strong> command. You can translate every NPC/player option and quester's name. You do this like this:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">quester</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">en</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Innkeeper</span><span class="w"></span>
-<span class="w">  </span><span class="nt">pl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Karczmarz</span><span class="w"></span>
-<span class="w">  </span><span class="nt">de</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gastwirt</span><span class="w"></span>
-</code></pre></div>
-<p>As said before, the same rule applies to all options and quester's name. The player can choose only from languages present in <em>messages.yml</em>, and if there will be no translation to this language in the conversation, the plugin will fall back to the default language, as defined in <em>config.yml</em>. If that one is not defined, there will be an error.</p>
-<p>You can also translate journal entries, quest cancelers and <code>message</code> events, more about that later.</p>
-<h2 id="conversation-displaying">Conversation displaying<a class="headerlink" href="#conversation-displaying" title="Permanent link">🔗</a></h2>
-<p>BetonQuest provides different conversation styles, so called "conversationIO's". They all look different but the biggest difference
-is the way the user interacts with them.</p>
-<div class="admonition note">
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">menu</label><label for="__tabbed_1_2">simple</label><label for="__tabbed_1_3">tellraw</label><label for="__tabbed_1_4">slowtellraw</label><label for="__tabbed_1_5">chest</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>A modern conversation style that works with some of Minecraft's native controls.
-All options can be found in the <a href="../Compatibility/#conversation-io-menu">compatibility</a> section.
-This is a video of it in action: <br/>
-<video controls loop
-     src="../../_media/content/Documentation/Conversations/MenuConvIO.mp4"
-    width="780" height="500">
-Sorry, your browser doesn't support embedded videos.
-</video></p>
-</div>
-<div class="tabbed-block">
-<p>A chat output. The user has to write a number into their chat to select an option.</p>
-</div>
-<div class="tabbed-block">
-<p>Also a chat output. The user can click on the options instead of typing them.</p>
-</div>
-<div class="tabbed-block">
-<p>The same as <code>tellraw</code> but the NPC's text is printed line by line, delayed by 0.5 seconds.</p>
-</div>
-<div class="tabbed-block">
-<p>A chest GUI with clickable buttons where the NPC's text and options will be shown as item lore.</p>
-<p>You can change the option's item to something else than ender pearls by adding a prefix to that option's text.
-The prefix is a name of the material (like in the <em>items</em> section) inside curly braces, with an optional damage value after a colon.
-Example of such option text: <code>{diamond_sword}I want to start a quest!</code>.</p>
-</div>
-</div>
-</div>
-</div>
-<p>You can control the colors of conversation elements in the <em>config.yml</em> file, in <code>conversation_colors</code> section. Here you must use names of the colors.</p>
-<p>BetonQuest uses the <code>menu</code> conversationIO by default. If ProtocolLib is not installed, the <code>chest</code> IO will be used.
-You can however change the utilized conversationIO by setting the <code>default_conversation_IO</code> option in the <em>config.yml</em> file.</p>
-<p>In case you want to use a different type of conversation display for just one specific conversation you can add a <code>conversationIO:
-&lt;type&gt;</code> setting to the conversation file at the top of the YAML hierarchy (which is the same level as <code>quester</code> or <code>first</code> options).</p>
-<h2 id="chat-interceptors">Chat Interceptors<a class="headerlink" href="#chat-interceptors" title="Permanent link">🔗</a></h2>
-<p>While engaged in a conversation, it can be distracting when messages from other players or system messages interfere with the dialogue.
-A chat interceptor provides a method of intercepting those messages and then sending them after the conversation has ended.</p>
-<p>You can specify the default chat interceptor by setting <code>default_interceptor</code> inside the <code>config.yml</code>.
-Additionally, you can overwrite the default for each conversation by setting the <code>interceptor</code> key inside your conversation file.</p>
-<p>The default configuration of BetonQuest sets the <code>default_interceptor</code> option to <code>packet,simple</code>.
-This means that it first tries to use the <code>packet</code> interceptor. If that fails it falls back to using the <code>simple</code> interceptor.</p>
-<p>BetonQuest adds following interceptors: <code>simple</code>, <code>packet</code> and <code>none</code>:</p>
-<p>The <code>simple</code> interceptor works with every Spigot server but only supports very basic functionality and may not work with plugins like Herochat.</p>
-<p>The <code>packet</code> interceptor requires the ProtocolLib plugin to be installed. It will work well in any kind of situation.</p>
-<p>The <code>none</code> interceptor is an interceptor that won't intercept messages. That sounds useless until you have a conversation
-that you want to be excluded from interception. In this case you can just set <code>interceptor: none</code> inside your conversation file.</p>
-<h2 id="advanced-extends">Advanced: Extends<a class="headerlink" href="#advanced-extends" title="Permanent link">🔗</a></h2>
-<p>Conversation also supports the concept of inheritance. Any option can include the key <code>extends</code> with a comma delimited list of other options of the same time. The first option that does not have any false conditions will have it's text, pointers and events merged with the extending option. The extended option may itself extend other options. Infinite loops are detected.</p>
-<p><div class="highlight"><pre><span></span><code><span class="nt">NPC_options</span><span class="p">:</span><span class="w"></span>
-
-<span class="w">  </span><span class="c1">## Normal Conversation Start</span><span class="w"></span>
-<span class="w">  </span><span class="nt">start</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;What</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">you&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">extends</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tonight, today</span><span class="w"></span>
-
-<span class="w">  </span><span class="c1">## Useless addition as example</span><span class="w"></span>
-<span class="w">  </span><span class="nt">tonight</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># Always false</span><span class="w"></span>
-<span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">random 0-1</span><span class="w"></span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;</span><span class="nv"> </span><span class="s">tonight?&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">extends</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main_menu</span><span class="w"></span>
-
-<span class="w">  </span><span class="nt">today</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;</span><span class="nv"> </span><span class="s">today?&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">extends</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main_menu</span><span class="w"></span>
-
-<span class="w">  </span><span class="c1">## Main main_menu</span><span class="w"></span>
-<span class="w w-Error"> </span><span class="nt">main_menu</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">pointers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">i_have_questions, bye</span><span class="w"></span>
-</code></pre></div>
-In the above example, the option <em>start</em> is extended by both <em>tonight</em> and <em>today</em>, both of whom are extended by <em>main_menu</em>. As <em>tonight</em> has a false condition the <em>today</em> option will win. The <em>start</em> option will have the pointers in main_menu added to it just as if they were defined directly in it and the text will be joined together from <em>today</em>. If you structure your conversation correctly you can make use of this to minimize duplication.</p>
+<ol>
+<li>
+<p>The name of your new schedule type to use in configs.</p>
+</li>
+<li>
+<p>Your <a href="#schedule-class">Schedule</a> class.</p>
+</li>
+<li>
+<p>A new instance of your <a href="#scheduler-class">Scheduler</a>.</p>
+</li>
+</ol>
+<p>You'll need to call it after BetonQuest was enabled.</p>
 
   
 
@@ -2593,7 +2648,7 @@ In the above example, the option <em>start</em> is extended by both <em>tonight<
                 
               
               
-                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Conversations+-+/Documentation/Conversations/&version=2.0.0-DEV-337"> feedback form</a>.
+                Thanks for your feedback! Help us improve this page by using our  <a href="https://github.com/BetonQuest/BetonQuest/issues/new/?template=docs-feedback.yml&title=[Docs Feedback]+Schedules+-+/API/Schedules/&version=2.0.0-DEV-337"> feedback form</a>.
               
             </div>
           
@@ -2623,7 +2678,7 @@ In the above example, the option <em>start</em> is extended by both <em>tonight<
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../Tutorials/Frequently-Asked-Questions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: General FAQ" rel="prev">
+        <a href="../Logging/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Logging" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2632,20 +2687,20 @@ In the above example, the option <em>start</em> is extended by both <em>tonight<
               <span class="md-footer__direction">
                 Previous
               </span>
-              General FAQ
+              Logging
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Reference/" class="md-footer__link md-footer__link--next" aria-label="Next: Reference" rel="next">
+        <a href="../../Participate/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Reference
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
