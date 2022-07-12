@@ -2475,14 +2475,26 @@ extends <code>Plugin</code>, see the warning box below for more information. </p
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@CustomLog</span><span class="w"></span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@CustomLog</span><span class="w"></span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyCustomEvent</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="c1">//...</span><span class="w"></span>
+<span class="w">    </span><span class="n">LOG</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&quot;Hello Log!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="c1">//...</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@CustomLog</span><span class="p">(</span><span class="n">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MyCustomTopic&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@CustomLog</span><span class="p">(</span><span class="n">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MyCustomTopic&quot;</span><span class="p">)</span><span class="w"></span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyCustomEvent</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="c1">//...</span><span class="w"></span>
+<span class="w">    </span><span class="n">LOG</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&quot;Hello Log!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="c1">//...</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
