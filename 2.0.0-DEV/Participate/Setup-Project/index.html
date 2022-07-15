@@ -2492,30 +2492,30 @@
 
   <h1>Setup Project</h1>
 
-<p>The BetonQuest Organisation recommends <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ</a>
+<p>The BetonQuest Organisation recommends <a href="https://www.jetbrains.com/idea/">IntelliJ</a>
 (Community Edition) as the IDE (Integrated Development Environment).
 The advantage of using IntelliJ is that this guide contains some steps and the project contains some files
 that help to fulfill our requirements regarding code and documentation style.
 You can still use your preferred IDE, but then you need to check on your own that your changes fulfill our requirements.</p>
 <h2 id="installing-intellij">Installing IntelliJ<a class="headerlink" href="#installing-intellij" title="Permanent link">🔗</a></h2>
-<p>First download <a href="https://www.jetbrains.com/idea/download/" target="_blank">IntelliJ</a> and install it.</p>
+<p>First download <a href="https://www.jetbrains.com/idea/download">IntelliJ</a> and install it.</p>
 <p>After you installed IntelliJ, we recommend installing the plugin
-<a href="https://plugins.jetbrains.com/plugin/7642-save-actions" target="_blank">Save Actions</a>.
+<a href="https://plugins.jetbrains.com/plugin/7642-save-actions">Save Actions</a>.
 The plugin automatically formats code, organizes imports, adds final modifiers, and fulfils some other requirements we have.
 You don't need to configure that plugin, the project contains the configuration file.</p>
 <h2 id="check-out-the-repository">Check out the repository<a class="headerlink" href="#check-out-the-repository" title="Permanent link">🔗</a></h2>
 <p>You need a Git installation to be able to check out code from GitHub.
-You can follow this <a href="https://docs.github.com/en/get-started/quickstart/set-up-git" target="_blank">guide</a>
+You can follow this <a href="https://docs.github.com/en/get-started/quickstart/set-up-git">guide</a>
 if you don't know how to install Git.  </p>
-<p>Then you should <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" target="_blank">fork</a>
+<p>Then you should <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">fork</a>
 the BetonQuest repository to your own account on GitHub.</p>
 <p>After you have setup the IDE,
-<a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository" target="_blank">clone</a>
+<a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository">clone</a>
 the BetonQuest repository from your account. You can also directly
-<a href="https://blog.jetbrains.com/idea/2020/10/clone-a-project-from-github/" target="_blank">clone the repository in IntelliJ</a>.</p>
+<a href="https://blog.jetbrains.com/idea/2020/10/clone-a-project-from-github/">clone the repository in IntelliJ</a>.</p>
 <details>
 <summary>In case videos and images are missing after cloning</summary>
-<p>We use <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> to store big files like media files, so you need to install that too.
+<p>We use <a href="https://git-lfs.github.com/">Git LFS</a> to store big files like media files, so you need to install that too.
 Once you have executed the file that you downloaded from the Git LFS website, just run <code>git lfs install</code>.
 Then use <code>git lfs pull</code> to actually download the files.</p>
 </details>
@@ -2617,12 +2617,11 @@ Now select <code>Maven</code>, set a <code>Name</code> like <code>BetonQuest Res
 into the field <code>Command line</code>. Then confirm with <code>Ok</code> twice.
 Now after starting IntelliJ the <code>BetonQuest Resolve Dependencies</code> task should run automatically.</p>
 <h2 id="building-the-documentation">Building the Documentation<a class="headerlink" href="#building-the-documentation" title="Permanent link">🔗</a></h2>
-<p>Make sure <a href="https://www.python.org/downloads/" target="_blank">Python3</a> is installed on your local system
+<p>Make sure <a href="https://www.python.org/downloads/">Python3</a> is installed on your local system
 and added to the PATH environment variable. The Python installer allows you to do so with a checkbox called something like
 "Add Python to environment variables".
-You also need to install <a href="https://www.gtk.org/" target="_blank">GTK</a>, the easiest way is to use this 
-<a href="https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/" target="_blank">GTK installer</a>
-if you are on Windows. </p>
+You also need to install <a href="https://www.gtk.org/">GTK</a>, the easiest way is to use this 
+<a href="https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/">GTK installer</a> if you are on Windows. </p>
 <p>Install all other dependencies by entering <code>pip install -r config/docs-requirements.txt</code> in the terminal on the project's root directory.</p>
 <details>
 <summary>In case you are a <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a> insider (paid premium version)</summary>
@@ -2634,7 +2633,7 @@ Then run <code>pip install -r config/docs-requirements-insiders.txt</code> inste
 <p>Run this command in IntelliJ's integrated terminal (at the bottom) to create a docs preview in your browser:</p>
 <div class="highlight"><pre><span></span><code>mkdocs serve
 </code></pre></div>
-<p>Then visit <a href="http://127.0.0.1:8000" target="_blank">127.0.0.1:8000</a> to make sure that everything works.</p>
+<p>Then visit <a href="http://127.0.0.1:8000">127.0.0.1:8000</a> to make sure that everything works.</p>
 <hr />
 <h2 id="where-to-continue">Where to Continue?<a class="headerlink" href="#where-to-continue" title="Permanent link">🔗</a></h2>
 <p>You should now continue with <a href="../Process/Create-a-new-Branch/">Create a new Branch</a>,

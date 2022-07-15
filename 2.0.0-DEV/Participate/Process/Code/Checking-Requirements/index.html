@@ -2312,7 +2312,7 @@ IntelliJ may also show something like <code>Failed to execute goal</code>. Here'
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">PMD</label><label for="__tabbed_1_2">SpotBugs</label><label for="__tabbed_1_3">CheckStyle</label><label for="__tabbed_1_4">EditorConfig</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Visit the <a href="https://pmd.github.io/latest/" target="_blank"><strong>PMD Page</strong></a> for general info.
+<p>Visit the <strong><a href="https://pmd.github.io/latest/">PMD Page</a></strong> for general info.
 <br><br>
 PMD mainly checks for code smells. PMD's errors look like this:
 <div class="highlight"><pre><span></span><code>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-pmd-plugin:3.14.0:check (default) on project betonquest: You have 1 PMD violation.
@@ -2321,13 +2321,13 @@ If you have this message you also have messages, that looks like this:
 <div class="highlight"><pre><span></span><code>[INFO] PMD Failure: org.betonquest.betonquest.BetonQuest:143 Rule:AvoidLiteralsInIfCondition Priority:3 Avoid using Literals in Conditional Statements.
 </code></pre></div>
 If you read this, you may know what is wrong. If you don't know why, visit the
-<a href="https://pmd.github.io/latest/" target="_blank">PMD</a> page.
+<a href="https://pmd.github.io/latest/">PMD</a> page.
 Then you type in the rule e.g. <code>AvoidLiteralsInIfCondition</code> in the search bar and click on the rule.
 You will get a detailed description about what is wrong.
 If you still don't know how to solve it, ask the developers on Discord for help with PMD.</p>
 </div>
 <div class="tabbed-block">
-<p>Visit the <a href="https://spotbugs.readthedocs.io/en/stable/index.html" target="_blank"><strong>SpotBugs Page</strong></a> for general info.
+<p>Visit the <strong><a href="https://spotbugs.readthedocs.io/en/stable/index.html">SpotBugs Page</a></strong> for general info.
 <br><br>
 SpotBugs searches for additional problems, most of them are potential bugs. SpotBugs' errors look like this:
 <div class="highlight"><pre><span></span><code>Failed to execute goal com.github.spotbugs:spotbugs-maven-plugin:4.2.2:check (default) on project betonquest: failed with 1 bugs and 0 errors
@@ -2337,11 +2337,11 @@ If your log contains such a message, it will also contain another message that l
 </code></pre></div>
 SpotBugs errors are a little complicated to read,
 but if you find e.g. <code>NP_NULL_PARAM_DEREF</code> at the end of the line you can simply search it on the
-<a href="https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html" target="_blank">SpotBugs</a> page.
+<a href="https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html">SpotBugs</a> page.
 If you have problems solving these kinds of issues you can ask on our Discord for help with SpotBugs.</p>
 </div>
 <div class="tabbed-block">
-<p>Visit the <a href="https://checkstyle.sourceforge.io/checks.html" target="_blank"><strong>CheckStyle Page</strong></a> for general info.
+<p>Visit the <strong><a href="https://checkstyle.sourceforge.io/checks.html">CheckStyle Page</a></strong> for general info.
 <br><br>
 CheckStyle checks the code formatting and style. We have only configured two checks.
 The first check is the import order, and the second check is that you do not use star imports,
@@ -2351,12 +2351,12 @@ There is only a basic check for the imports, and it looks like this:
 </code></pre></div>
 CheckStyle is very simple to read, normally it is in your language and self explaining.<br />
 In the above error you can find e.g <code>ImportOrder</code> and you can search on the
-<a href="https://checkstyle.sourceforge.io/checks.html" target="_blank">CheckStyle</a> page for it.
+<a href="https://checkstyle.sourceforge.io/checks.html">CheckStyle</a> page for it.
 If you need help solving an issue here, you can also ask us on our Discord for help with CheckStyle.
 <br><br><br></p>
 </div>
 <div class="tabbed-block">
-<p>Visit the <a href="https://editorconfig.org/" target="_blank"><strong>EditorConfig Page</strong></a> for general info.
+<p>Visit the <strong><a href="https://editorconfig.org/">EditorConfig Page</a></strong> for general info.
 <br><br>
 EditorConfig it natively supported by many IDEs and editors.
 It checks for some really basic formatting like brackets, line endings, indention and some more.

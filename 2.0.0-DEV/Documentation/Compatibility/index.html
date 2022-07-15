@@ -5652,7 +5652,7 @@ The <code>level</code> argument is optional and would convert the amount to leve
 <p>Removes the specified drink from the players inventory. An amount needs to be specified.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">takebrew 2 MY_OTHER_BREW</span><span class="w"> </span>
 </code></pre></div></td></tr></table></div>
-<h2 id="npcs-using-citizens">NPC's using <a href="https://www.spigotmc.org/resources/citizens.13811/" target="_blank">Citizens</a><a class="headerlink" href="#npcs-using-citizens" title="Permanent link">🔗</a></h2>
+<h2 id="npcs-using-citizens">NPC's using <a href="https://www.spigotmc.org/resources/citizens.13811/">Citizens</a><a class="headerlink" href="#npcs-using-citizens" title="Permanent link">🔗</a></h2>
 <p>If you have this plugin you can use it's NPCs for conversations. I highly recommend you installing it,
 it's NPCs are way more immersive. Having Citizens also allows you to use NPCKill objective and to have moving NPC's.</p>
 <p>A Citizen NPC will only react to right clicks by default. This can be changed by 
@@ -5764,9 +5764,9 @@ This means that <code>enter</code> is not completed when the player gets the obj
 <h2 id="effectlib"><a href="http://dev.bukkit.org/bukkit-plugins/effectlib/">EffectLib</a><a class="headerlink" href="#effectlib" title="Permanent link">🔗</a></h2>
 <p>If you install this plugin on your server you will be able to set a particle effect on NPCs with conversations and use <code>particle</code> event.</p>
 <p>EffectLib is not a normal plugin, it's a developer tool - there are no official docs. However, the Magic plugin has a
-<a href="https://reference.elmakers.com/#effectlib" target="_blank">wiki</a> for EffectLib.
+<a href="https://reference.elmakers.com/#effectlib">wiki</a> for EffectLib.
 It does contain a few magic specific settings though so please don't be confused if some stuff does not work.
-There is also a <a href="https://sandbox.elmakers.com/#betonquestEffectLibTemplate" target="_blank">magic editor</a> with autocompletion for EffectLib.</p>
+There is also a <a href="https://sandbox.elmakers.com/#betonquestEffectLibTemplate">magic editor</a> with autocompletion for EffectLib.</p>
 <p>You can control the behaviour of particles around the NPCs in the <code>npc_effects</code> section.
 Each effect is defined as a separate subsection and consists of EffectLib options (described on the EffectLib page) and several BetonQuest settings.
 <code>npcs</code> is a list of all NPCs on which this effect can be displayed. If no <code>npcs</code> are specified it will use the package NPCs from <em>package.yml</em>.
@@ -5944,7 +5944,7 @@ the player advances the objective, optionally with the notification interval aft
 <p>Any BetonQuest tag (global and per-player) can be used as a LuckPerms context. This means that a player needs the specified tag for a permission
 to be true - this removes the need for tons of <code>permission add ...</code> events as you can hook your existing
 quest progress tags right into LuckPerms permission
-<a href="https://luckperms.net/wiki/Context" target="_blank">contexts</a>.
+<a href="https://luckperms.net/wiki/Context">contexts</a>.
 The syntax is as follows:</p>
 <table>
 <thead>
@@ -5972,8 +5972,7 @@ The syntax is as follows:</p>
 </tr>
 </tbody>
 </table>
-<p>Check the 
-<a href="https://luckperms.net/wiki/Context" target="_blank">Luck Perms documentation</a>
+<p>Check the <a href="https://luckperms.net/wiki/Context">Luck Perms documentation</a>
 for an in-depth explanation on what contexts are and how to add them to permission.</p>
 <h2 id="magic"><a href="http://dev.bukkit.org/bukkit-plugins/magic/">Magic</a><a class="headerlink" href="#magic" title="Permanent link">🔗</a></h2>
 <h3 id="conditions_5">Conditions<a class="headerlink" href="#conditions_5" title="Permanent link">🔗</a></h3>
@@ -6045,7 +6044,7 @@ If no amount has been defined the default amount is one.
 <span class="l l-Scalar l-Scalar-Plain">mmohand GEMS SPEED_GEM 3 offhand</span><span class="w"></span>
 </code></pre></div></td></tr></table></div></p>
 <h4 id="mythiclib-stat-mmostat">MythicLib stat: <code>mmostat</code><a class="headerlink" href="#mythiclib-stat-mmostat" title="Permanent link">🔗</a></h4>
-<p>Checks <a href="https://github.com/mmopluginteam/mmolib/blob/master/src/main/java/net/mmogroup/mmolib/api/stat/SharedStat.java" target="_blank">these</a>
+<p>Checks <a href="https://gitlab.com/phoenix-dvpmt/mythiclib/-/blob/master/plugin/src/main/java/io/lumine/mythic/lib/api/stat/SharedStat.java">these</a>
 stats that combine all sorts of stats from MMOCore and MMOItems.
 The player needs to be on the specified level or higher in order to meet this condition.
 You can disable this behaviour by adding the <code>equal</code> argument. 
@@ -6054,7 +6053,7 @@ You can disable this behaviour by adding the <code>equal</code> argument.
 <h3 id="objectives_2">Objectives<a class="headerlink" href="#objectives_2" title="Permanent link">🔗</a></h3>
 <h4 id="break-special-blocks-mmocorebreakblock">Break Special Blocks: <code>mmocorebreakblock</code><a class="headerlink" href="#break-special-blocks-mmocorebreakblock" title="Permanent link">🔗</a></h4>
 <p>This objective requires the player to break 
-<a href="https://git.lumine.io/mythiccraft/mmocore/-/wikis/Mining%20and%20Block%20Regen" target="_blank">special blocks from MMOCore</a>.
+<a href="https://gitlab.com/phoenix-dvpmt/mmocore/-/wikis/Mining%20and%20Block%20Regen">special blocks from MMOCore</a>.
 All three different block types and an amount can be defined. You can also send notifications to the player by appending
 the <code>notify</code> keyword optionally with the notification interval after a colon.</p>
 <p>This objective has three properties: <code>amount</code>, <code>left</code> and <code>total</code>. <code>amount</code> is the amount of blocks already broken,
