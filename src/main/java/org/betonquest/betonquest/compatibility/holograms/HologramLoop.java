@@ -4,11 +4,7 @@ import lombok.CustomLog;
 import org.betonquest.betonquest.BetonQuest;
 import org.betonquest.betonquest.api.config.quest.QuestPackage;
 import org.betonquest.betonquest.api.profiles.OnlineProfile;
-import org.betonquest.betonquest.compatibility.holograms.lines.AbstractLine;
-import org.betonquest.betonquest.compatibility.holograms.lines.ItemLine;
-import org.betonquest.betonquest.compatibility.holograms.lines.TextLine;
-import org.betonquest.betonquest.compatibility.holograms.lines.TopLine;
-import org.betonquest.betonquest.compatibility.holograms.lines.TopXObject;
+import org.betonquest.betonquest.compatibility.holograms.lines.*;
 import org.betonquest.betonquest.config.Config;
 import org.betonquest.betonquest.exceptions.InstructionParseException;
 import org.betonquest.betonquest.exceptions.ObjectNotFoundException;
@@ -23,13 +19,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -66,7 +56,7 @@ public class HologramLoop {
                 if (location == null) {
                     continue;
                 }
-                final ConditionID[] conditions = parseConditions(pack, key, rawConditions);
+                final List<ConditionID> conditions = parseConditions(pack, key, rawConditions);
 
                 final ArrayList<AbstractLine> cleanedLines = new ArrayList<>();
                 for (final String line : lines) {
@@ -94,16 +84,14 @@ public class HologramLoop {
     }
 
     @NotNull
-    private ConditionID[] parseConditions(final QuestPackage pack, final String key, final String rawConditions) {
-        ConditionID[] conditions = {};
+    private List<ConditionID> parseConditions(final QuestPackage pack, final String key, final String rawConditions) {
+        final List<ConditionID> conditions = new ArrayList<>();
         if (rawConditions != null) {
-            final String[] parts = rawConditions.split(",");
-            conditions = new ConditionID[parts.length];
-            for (int i = 0; i < conditions.length; i++) {
+            for (final String part : rawConditions.split(",")) {
                 try {
-                    conditions[i] = new ConditionID(pack, parts[i]);
+                    conditions.add(new ConditionID(pack, part));
                 } catch (final ObjectNotFoundException e) {
-                    LOG.warn(pack, "Error while loading " + parts[i] + " condition for hologram " + pack.getQuestPath() + "."
+                    LOG.warn(pack, "Error while loading " + part + " condition for hologram " + pack.getQuestPath() + "."
                             + key + ": " + e.getMessage(), e);
                 }
             }

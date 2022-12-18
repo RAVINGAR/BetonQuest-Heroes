@@ -110,7 +110,6 @@ public class DecentHologramsHologram implements BetonHologram {
 
     @Override
     public void delete() {
-        hologram.disable();
         DHAPI.removeHologram(hologram.getName());
     }
 

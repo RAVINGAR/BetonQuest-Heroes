@@ -31,13 +31,14 @@ import java.util.List;
  * @param identifier    Name of hologram from <code>custom.yml</code>
  * @param questPackage  {@link QuestPackage} in which the hologram is specified in.
  */
-public record HologramWrapper(int interval, BetonHologram hologram, boolean staticContent, ConditionID[] conditionList,
+public record HologramWrapper(int interval, BetonHologram hologram, boolean staticContent,
+                              List<ConditionID> conditionList,
                               List<AbstractLine> cleanedLines, String identifier, QuestPackage questPackage) {
     /**
      * Checks whether all conditions are met by a players and displays or hides the hologram.
      */
     public void updateVisibility() {
-        if (conditionList.length == 0) {
+        if (conditionList.size() == 0) {
             hologram.showAll();
             return;
         }
