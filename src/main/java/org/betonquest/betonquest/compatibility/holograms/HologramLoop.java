@@ -4,7 +4,11 @@ import lombok.CustomLog;
 import org.betonquest.betonquest.BetonQuest;
 import org.betonquest.betonquest.api.config.quest.QuestPackage;
 import org.betonquest.betonquest.api.profiles.OnlineProfile;
-import org.betonquest.betonquest.compatibility.holograms.lines.*;
+import org.betonquest.betonquest.compatibility.holograms.lines.AbstractLine;
+import org.betonquest.betonquest.compatibility.holograms.lines.ItemLine;
+import org.betonquest.betonquest.compatibility.holograms.lines.TextLine;
+import org.betonquest.betonquest.compatibility.holograms.lines.TopLine;
+import org.betonquest.betonquest.compatibility.holograms.lines.TopXObject;
 import org.betonquest.betonquest.config.Config;
 import org.betonquest.betonquest.exceptions.InstructionParseException;
 import org.betonquest.betonquest.exceptions.ObjectNotFoundException;
@@ -19,7 +23,13 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

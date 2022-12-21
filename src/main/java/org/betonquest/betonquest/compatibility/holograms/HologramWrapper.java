@@ -38,7 +38,7 @@ public record HologramWrapper(int interval, BetonHologram hologram, boolean stat
      * Checks whether all conditions are met by a players and displays or hides the hologram.
      */
     public void updateVisibility() {
-        if (conditionList.size() == 0) {
+        if (conditionList.isEmpty()) {
             hologram.showAll();
             return;
         }
