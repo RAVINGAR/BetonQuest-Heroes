@@ -100,7 +100,6 @@ public class CitizensHologram extends BukkitRunnable {
         for (final List<NPCHologram> holograms : npcs.values()) {
             for (final NPCHologram npcHologram : holograms) {
                 if (npcHologram.hologram != null) {
-                    npcHologram.hologram.hideAll();
                     npcHologram.hologram.delete();
                     npcHologram.hologram = null;
                 }
@@ -183,7 +182,6 @@ public class CitizensHologram extends BukkitRunnable {
                 if (updateHologramsForPlayers(npcHologram, npc)) {
                     npcUpdater = true;
                 } else if (npcHologram.hologram != null) {
-                    npcHologram.hologram.hideAll();
                     npcHologram.hologram.delete();
                     npcHologram.hologram = null;
                 }

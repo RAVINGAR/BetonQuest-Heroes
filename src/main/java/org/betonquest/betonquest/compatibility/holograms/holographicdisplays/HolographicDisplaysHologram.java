@@ -98,6 +98,7 @@ public class HolographicDisplaysHologram implements BetonHologram {
 
     @Override
     public void delete() {
+        hideAll();
         hologram.delete();
     }
 
